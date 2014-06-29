@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAF7A83619603F280037E2CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83519603F280037E2CD /* Foundation.framework */; };
+		FAF7A83819603F280037E2CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83719603F280037E2CD /* CoreGraphics.framework */; };
+		FAF7A83A19603F280037E2CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83919603F280037E2CD /* UIKit.framework */; };
+		FAF7A84019603F280037E2CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A83E19603F280037E2CD /* InfoPlist.strings */; };
+		FAF7A84219603F280037E2CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A84119603F280037E2CD /* main.m */; };
+		FAF7A84619603F280037E2CD /* CJAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A84519603F280037E2CD /* CJAAppDelegate.m */; };
+		FAF7A84919603F280037E2CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A84719603F280037E2CD /* Main_iPhone.storyboard */; };
+		FAF7A84C19603F280037E2CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A84A19603F280037E2CD /* Main_iPad.storyboard */; };
+		FAF7A84F19603F280037E2CD /* CJAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A84E19603F280037E2CD /* CJAViewController.m */; };
+		FAF7A85119603F280037E2CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A85019603F280037E2CD /* Images.xcassets */; };
+		FAF7A85819603F280037E2CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A85719603F280037E2CD /* XCTest.framework */; };
+		FAF7A85919603F290037E2CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83519603F280037E2CD /* Foundation.framework */; };
+		FAF7A85A19603F290037E2CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83919603F280037E2CD /* UIKit.framework */; };
+		FAF7A86219603F290037E2CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A86019603F290037E2CD /* InfoPlist.strings */; };
+		FAF7A86419603F290037E2CD /* CJADataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A86319603F290037E2CD /* CJADataSourceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE859BB1960409B00B71FDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF7A82A19603F280037E2CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF7A83119603F280037E2CD;
+			remoteInfo = CJADataSource;
+		};
+		FAF7A85B19603F290037E2CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF7A82A19603F280037E2CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF7A83119603F280037E2CD;
+			remoteInfo = CJADataSource;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAF7A83219603F280037E2CD /* CJADataSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJADataSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF7A83519603F280037E2CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAF7A83719603F280037E2CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAF7A83919603F280037E2CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAF7A83D19603F280037E2CD /* CJADataSource-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CJADataSource-Info.plist"; sourceTree = "<group>"; };
+		FAF7A83F19603F280037E2CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAF7A84119603F280037E2CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAF7A84319603F280037E2CD /* CJADataSource-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CJADataSource-Prefix.pch"; sourceTree = "<group>"; };
+		FAF7A84419603F280037E2CD /* CJAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJAAppDelegate.h; sourceTree = "<group>"; };
+		FAF7A84519603F280037E2CD /* CJAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJAAppDelegate.m; sourceTree = "<group>"; };
+		FAF7A84819603F280037E2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FAF7A84B19603F280037E2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		FAF7A84D19603F280037E2CD /* CJAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJAViewController.h; sourceTree = "<group>"; };
+		FAF7A84E19603F280037E2CD /* CJAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJAViewController.m; sourceTree = "<group>"; };
+		FAF7A85019603F280037E2CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAF7A85619603F280037E2CD /* CJADataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJADataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF7A85719603F280037E2CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FAF7A85F19603F290037E2CD /* CJADataSourceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CJADataSourceTests-Info.plist"; sourceTree = "<group>"; };
+		FAF7A86119603F290037E2CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAF7A86319603F290037E2CD /* CJADataSourceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJADataSourceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF7A82F19603F280037E2CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF7A83819603F280037E2CD /* CoreGraphics.framework in Frameworks */,
+				FAF7A83A19603F280037E2CD /* UIKit.framework in Frameworks */,
+				FAF7A83619603F280037E2CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF7A85319603F280037E2CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF7A85819603F280037E2CD /* XCTest.framework in Frameworks */,
+				FAF7A85A19603F290037E2CD /* UIKit.framework in Frameworks */,
+				FAF7A85919603F290037E2CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAF7A82919603F280037E2CD = {
+			isa = PBXGroup;
+			children = (
+				FAF7A83B19603F280037E2CD /* CJADataSource */,
+				FAF7A85D19603F290037E2CD /* CJADataSourceTests */,
+				FAF7A83419603F280037E2CD /* Frameworks */,
+				FAF7A83319603F280037E2CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF7A83319603F280037E2CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7A83219603F280037E2CD /* CJADataSource.app */,
+				FAF7A85619603F280037E2CD /* CJADataSourceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF7A83419603F280037E2CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7A83519603F280037E2CD /* Foundation.framework */,
+				FAF7A83719603F280037E2CD /* CoreGraphics.framework */,
+				FAF7A83919603F280037E2CD /* UIKit.framework */,
+				FAF7A85719603F280037E2CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAF7A83B19603F280037E2CD /* CJADataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7A84419603F280037E2CD /* CJAAppDelegate.h */,
+				FAF7A84519603F280037E2CD /* CJAAppDelegate.m */,
+				FAF7A84719603F280037E2CD /* Main_iPhone.storyboard */,
+				FAF7A84A19603F280037E2CD /* Main_iPad.storyboard */,
+				FAF7A84D19603F280037E2CD /* CJAViewController.h */,
+				FAF7A84E19603F280037E2CD /* CJAViewController.m */,
+				FAF7A85019603F280037E2CD /* Images.xcassets */,
+				FAF7A83C19603F280037E2CD /* Supporting Files */,
+			);
+			path = CJADataSource;
+			sourceTree = "<group>";
+		};
+		FAF7A83C19603F280037E2CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7A83D19603F280037E2CD /* CJADataSource-Info.plist */,
+				FAF7A83E19603F280037E2CD /* InfoPlist.strings */,
+				FAF7A84119603F280037E2CD /* main.m */,
+				FAF7A84319603F280037E2CD /* CJADataSource-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF7A85D19603F290037E2CD /* CJADataSourceTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7A86319603F290037E2CD /* CJADataSourceTests.m */,
+				FAF7A85E19603F290037E2CD /* Supporting Files */,
+			);
+			path = CJADataSourceTests;
+			sourceTree = "<group>";
+		};
+		FAF7A85E19603F290037E2CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7A85F19603F290037E2CD /* CJADataSourceTests-Info.plist */,
+				FAF7A86019603F290037E2CD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF7A83119603F280037E2CD /* CJADataSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF7A86719603F290037E2CD /* Build configuration list for PBXNativeTarget "CJADataSource" */;
+			buildPhases = (
+				FAF7A82E19603F280037E2CD /* Sources */,
+				FAF7A82F19603F280037E2CD /* Frameworks */,
+				FAF7A83019603F280037E2CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJADataSource;
+			productName = CJADataSource;
+			productReference = FAF7A83219603F280037E2CD /* CJADataSource.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAF7A85519603F280037E2CD /* CJADataSourceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF7A86A19603F290037E2CD /* Build configuration list for PBXNativeTarget "CJADataSourceTests" */;
+			buildPhases = (
+				FAF7A85219603F280037E2CD /* Sources */,
+				FAF7A85319603F280037E2CD /* Frameworks */,
+				FAF7A85419603F280037E2CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF7A85C19603F290037E2CD /* PBXTargetDependency */,
+				FAE859BC1960409B00B71FDA /* PBXTargetDependency */,
+			);
+			name = CJADataSourceTests;
+			productName = CJADataSourceTests;
+			productReference = FAF7A85619603F280037E2CD /* CJADataSourceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF7A82A19603F280037E2CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CJA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Carl Jahn";
+				TargetAttributes = {
+					FAF7A85519603F280037E2CD = {
+						TestTargetID = FAF7A83119603F280037E2CD;
+					};
+				};
+			};
+			buildConfigurationList = FAF7A82D19603F280037E2CD /* Build configuration list for PBXProject "CJADataSource" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF7A82919603F280037E2CD;
+			productRefGroup = FAF7A83319603F280037E2CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF7A83119603F280037E2CD /* CJADataSource */,
+				FAF7A85519603F280037E2CD /* CJADataSourceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF7A83019603F280037E2CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF7A84C19603F280037E2CD /* Main_iPad.storyboard in Resources */,
+				FAF7A85119603F280037E2CD /* Images.xcassets in Resources */,
+				FAF7A84919603F280037E2CD /* Main_iPhone.storyboard in Resources */,
+				FAF7A84019603F280037E2CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF7A85419603F280037E2CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF7A86219603F290037E2CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF7A82E19603F280037E2CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF7A84219603F280037E2CD /* main.m in Sources */,
+				FAF7A84619603F280037E2CD /* CJAAppDelegate.m in Sources */,
+				FAF7A84F19603F280037E2CD /* CJAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF7A85219603F280037E2CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF7A86419603F290037E2CD /* CJADataSourceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE859BC1960409B00B71FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF7A83119603F280037E2CD /* CJADataSource */;
+			targetProxy = FAE859BB1960409B00B71FDA /* PBXContainerItemProxy */;
+		};
+		FAF7A85C19603F290037E2CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF7A83119603F280037E2CD /* CJADataSource */;
+			targetProxy = FAF7A85B19603F290037E2CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAF7A83E19603F280037E2CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF7A83F19603F280037E2CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAF7A84719603F280037E2CD /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF7A84819603F280037E2CD /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FAF7A84A19603F280037E2CD /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF7A84B19603F280037E2CD /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FAF7A86019603F290037E2CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF7A86119603F290037E2CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF7A86519603F290037E2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF7A86619603F290037E2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF7A86819603F290037E2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CJADataSource/CJADataSource-Prefix.pch";
+				INFOPLIST_FILE = "CJADataSource/CJADataSource-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAF7A86919603F290037E2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CJADataSource/CJADataSource-Prefix.pch";
+				INFOPLIST_FILE = "CJADataSource/CJADataSource-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FAF7A86B19603F290037E2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CJADataSource/CJADataSource-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CJADataSourceTests/CJADataSourceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FAF7A86C19603F290037E2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CJADataSource/CJADataSource-Prefix.pch";
+				INFOPLIST_FILE = "CJADataSourceTests/CJADataSourceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF7A82D19603F280037E2CD /* Build configuration list for PBXProject "CJADataSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF7A86519603F290037E2CD /* Debug */,
+				FAF7A86619603F290037E2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF7A86719603F290037E2CD /* Build configuration list for PBXNativeTarget "CJADataSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF7A86819603F290037E2CD /* Debug */,
+				FAF7A86919603F290037E2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF7A86A19603F290037E2CD /* Build configuration list for PBXNativeTarget "CJADataSourceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF7A86B19603F290037E2CD /* Debug */,
+				FAF7A86C19603F290037E2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF7A82A19603F280037E2CD /* Project object */;
+}
