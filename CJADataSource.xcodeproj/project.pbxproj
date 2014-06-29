@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAE859C71960413300B71FDA /* CJAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859C41960413300B71FDA /* CJAAppDelegate.m */; };
+		FAE859C81960413300B71FDA /* CJABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859C61960413300B71FDA /* CJABaseTableViewController.m */; };
+		FAE859CD1960413B00B71FDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859CB1960413B00B71FDA /* main.m */; };
+		FAE859CF1960414200B71FDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE859CE1960414200B71FDA /* Images.xcassets */; };
+		FAE859D21960419100B71FDA /* CJADataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859D11960418900B71FDA /* CJADataSourceTests.m */; };
+		FAE859D91960421800B71FDA /* CJAArrayDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859D41960421800B71FDA /* CJAArrayDatasource.m */; };
+		FAE859DA1960421800B71FDA /* CJATableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859D61960421800B71FDA /* CJATableViewDatasource.m */; };
+		FAE859DB1960421800B71FDA /* CJAFetchedResultControllerDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859D81960421800B71FDA /* CJAFetchedResultControllerDatasource.m */; };
 		FAF7A83619603F280037E2CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83519603F280037E2CD /* Foundation.framework */; };
 		FAF7A83819603F280037E2CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83719603F280037E2CD /* CoreGraphics.framework */; };
 		FAF7A83A19603F280037E2CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83919603F280037E2CD /* UIKit.framework */; };
-		FAF7A84019603F280037E2CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A83E19603F280037E2CD /* InfoPlist.strings */; };
-		FAF7A84219603F280037E2CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A84119603F280037E2CD /* main.m */; };
-		FAF7A84619603F280037E2CD /* CJAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A84519603F280037E2CD /* CJAAppDelegate.m */; };
-		FAF7A84919603F280037E2CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A84719603F280037E2CD /* Main_iPhone.storyboard */; };
-		FAF7A84C19603F280037E2CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A84A19603F280037E2CD /* Main_iPad.storyboard */; };
-		FAF7A84F19603F280037E2CD /* CJAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A84E19603F280037E2CD /* CJAViewController.m */; };
-		FAF7A85119603F280037E2CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A85019603F280037E2CD /* Images.xcassets */; };
 		FAF7A85819603F280037E2CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A85719603F280037E2CD /* XCTest.framework */; };
 		FAF7A85919603F290037E2CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83519603F280037E2CD /* Foundation.framework */; };
 		FAF7A85A19603F290037E2CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83919603F280037E2CD /* UIKit.framework */; };
-		FAF7A86219603F290037E2CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A86019603F290037E2CD /* InfoPlist.strings */; };
-		FAF7A86419603F290037E2CD /* CJADataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A86319603F290037E2CD /* CJADataSourceTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FAE859BB1960409B00B71FDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF7A82A19603F280037E2CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF7A83119603F280037E2CD;
+			remoteInfo = CJADataSource;
+		};
+		FAE859BD1960409C00B71FDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FAF7A82A19603F280037E2CD /* Project object */;
 			proxyType = 1;
@@ -42,26 +48,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FAE859C31960413300B71FDA /* CJAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAAppDelegate.h; path = Example/Classes/CJAAppDelegate.h; sourceTree = "<group>"; };
+		FAE859C41960413300B71FDA /* CJAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAAppDelegate.m; path = Example/Classes/CJAAppDelegate.m; sourceTree = "<group>"; };
+		FAE859C51960413300B71FDA /* CJABaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJABaseTableViewController.h; path = Example/Classes/CJABaseTableViewController.h; sourceTree = "<group>"; };
+		FAE859C61960413300B71FDA /* CJABaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJABaseTableViewController.m; path = Example/Classes/CJABaseTableViewController.m; sourceTree = "<group>"; };
+		FAE859C91960413B00B71FDA /* CJADataSource-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CJADataSource-Info.plist"; path = "Example/Other Sources/CJADataSource-Info.plist"; sourceTree = "<group>"; };
+		FAE859CA1960413B00B71FDA /* CJADataSource-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CJADataSource-Prefix.pch"; path = "Example/Other Sources/CJADataSource-Prefix.pch"; sourceTree = "<group>"; };
+		FAE859CB1960413B00B71FDA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Example/Other Sources/main.m"; sourceTree = "<group>"; };
+		FAE859CE1960414200B71FDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Example/Resources/Images.xcassets; sourceTree = "<group>"; };
+		FAE859D01960418900B71FDA /* CJADataSourceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CJADataSourceTests-Info.plist"; path = "Tests/CJADataSourceTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FAE859D11960418900B71FDA /* CJADataSourceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CJADataSourceTests.m; path = Tests/CJADataSourceTests.m; sourceTree = SOURCE_ROOT; };
+		FAE859D31960421800B71FDA /* CJAArrayDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAArrayDatasource.h; sourceTree = "<group>"; };
+		FAE859D41960421800B71FDA /* CJAArrayDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAArrayDatasource.m; sourceTree = "<group>"; };
+		FAE859D51960421800B71FDA /* CJATableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJATableViewDatasource.h; sourceTree = "<group>"; };
+		FAE859D61960421800B71FDA /* CJATableViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJATableViewDatasource.m; sourceTree = "<group>"; };
+		FAE859D71960421800B71FDA /* CJAFetchedResultControllerDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAFetchedResultControllerDatasource.h; sourceTree = "<group>"; };
+		FAE859D81960421800B71FDA /* CJAFetchedResultControllerDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAFetchedResultControllerDatasource.m; sourceTree = "<group>"; };
+		FAE859DD1960490C00B71FDA /* CJADataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJADataSource.h; sourceTree = "<group>"; };
 		FAF7A83219603F280037E2CD /* CJADataSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJADataSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF7A83519603F280037E2CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAF7A83719603F280037E2CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FAF7A83919603F280037E2CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FAF7A83D19603F280037E2CD /* CJADataSource-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CJADataSource-Info.plist"; sourceTree = "<group>"; };
-		FAF7A83F19603F280037E2CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAF7A84119603F280037E2CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FAF7A84319603F280037E2CD /* CJADataSource-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CJADataSource-Prefix.pch"; sourceTree = "<group>"; };
-		FAF7A84419603F280037E2CD /* CJAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJAAppDelegate.h; sourceTree = "<group>"; };
-		FAF7A84519603F280037E2CD /* CJAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJAAppDelegate.m; sourceTree = "<group>"; };
-		FAF7A84819603F280037E2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		FAF7A84B19603F280037E2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		FAF7A84D19603F280037E2CD /* CJAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJAViewController.h; sourceTree = "<group>"; };
-		FAF7A84E19603F280037E2CD /* CJAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJAViewController.m; sourceTree = "<group>"; };
-		FAF7A85019603F280037E2CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAF7A85619603F280037E2CD /* CJADataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJADataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF7A85719603F280037E2CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FAF7A85F19603F290037E2CD /* CJADataSourceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CJADataSourceTests-Info.plist"; sourceTree = "<group>"; };
-		FAF7A86119603F290037E2CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAF7A86319603F290037E2CD /* CJADataSourceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJADataSourceTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +97,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAE859BF196040CA00B71FDA /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				FAE859C0196040D800B71FDA /* Classes */,
+				FAE859C2196040E200B71FDA /* Other Sources */,
+				FAE859C1196040DD00B71FDA /* Resources */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		FAE859C0196040D800B71FDA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAE859C51960413300B71FDA /* CJABaseTableViewController.h */,
+				FAE859C61960413300B71FDA /* CJABaseTableViewController.m */,
+				FAE859C31960413300B71FDA /* CJAAppDelegate.h */,
+				FAE859C41960413300B71FDA /* CJAAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FAE859C1196040DD00B71FDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAE859CE1960414200B71FDA /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FAE859C2196040E200B71FDA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAE859C91960413B00B71FDA /* CJADataSource-Info.plist */,
+				FAE859CA1960413B00B71FDA /* CJADataSource-Prefix.pch */,
+				FAE859CB1960413B00B71FDA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
 		FAF7A82919603F280037E2CD = {
 			isa = PBXGroup;
 			children = (
 				FAF7A83B19603F280037E2CD /* CJADataSource */,
+				FAE859BF196040CA00B71FDA /* Example */,
 				FAF7A85D19603F290037E2CD /* CJADataSourceTests */,
 				FAF7A83419603F280037E2CD /* Frameworks */,
 				FAF7A83319603F280037E2CD /* Products */,
@@ -121,33 +170,21 @@
 		FAF7A83B19603F280037E2CD /* CJADataSource */ = {
 			isa = PBXGroup;
 			children = (
-				FAF7A84419603F280037E2CD /* CJAAppDelegate.h */,
-				FAF7A84519603F280037E2CD /* CJAAppDelegate.m */,
-				FAF7A84719603F280037E2CD /* Main_iPhone.storyboard */,
-				FAF7A84A19603F280037E2CD /* Main_iPad.storyboard */,
-				FAF7A84D19603F280037E2CD /* CJAViewController.h */,
-				FAF7A84E19603F280037E2CD /* CJAViewController.m */,
-				FAF7A85019603F280037E2CD /* Images.xcassets */,
-				FAF7A83C19603F280037E2CD /* Supporting Files */,
+				FAE859DD1960490C00B71FDA /* CJADataSource.h */,
+				FAE859D51960421800B71FDA /* CJATableViewDatasource.h */,
+				FAE859D61960421800B71FDA /* CJATableViewDatasource.m */,
+				FAE859D31960421800B71FDA /* CJAArrayDatasource.h */,
+				FAE859D41960421800B71FDA /* CJAArrayDatasource.m */,
+				FAE859D71960421800B71FDA /* CJAFetchedResultControllerDatasource.h */,
+				FAE859D81960421800B71FDA /* CJAFetchedResultControllerDatasource.m */,
 			);
 			path = CJADataSource;
-			sourceTree = "<group>";
-		};
-		FAF7A83C19603F280037E2CD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAF7A83D19603F280037E2CD /* CJADataSource-Info.plist */,
-				FAF7A83E19603F280037E2CD /* InfoPlist.strings */,
-				FAF7A84119603F280037E2CD /* main.m */,
-				FAF7A84319603F280037E2CD /* CJADataSource-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		FAF7A85D19603F290037E2CD /* CJADataSourceTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAF7A86319603F290037E2CD /* CJADataSourceTests.m */,
+				FAE859D11960418900B71FDA /* CJADataSourceTests.m */,
 				FAF7A85E19603F290037E2CD /* Supporting Files */,
 			);
 			path = CJADataSourceTests;
@@ -156,8 +193,7 @@
 		FAF7A85E19603F290037E2CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FAF7A85F19603F290037E2CD /* CJADataSourceTests-Info.plist */,
-				FAF7A86019603F290037E2CD /* InfoPlist.strings */,
+				FAE859D01960418900B71FDA /* CJADataSourceTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,6 +231,7 @@
 			dependencies = (
 				FAF7A85C19603F290037E2CD /* PBXTargetDependency */,
 				FAE859BC1960409B00B71FDA /* PBXTargetDependency */,
+				FAE859BE1960409C00B71FDA /* PBXTargetDependency */,
 			);
 			name = CJADataSourceTests;
 			productName = CJADataSourceTests;
@@ -240,10 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF7A84C19603F280037E2CD /* Main_iPad.storyboard in Resources */,
-				FAF7A85119603F280037E2CD /* Images.xcassets in Resources */,
-				FAF7A84919603F280037E2CD /* Main_iPhone.storyboard in Resources */,
-				FAF7A84019603F280037E2CD /* InfoPlist.strings in Resources */,
+				FAE859CF1960414200B71FDA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +285,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF7A86219603F290037E2CD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF7A84219603F280037E2CD /* main.m in Sources */,
-				FAF7A84619603F280037E2CD /* CJAAppDelegate.m in Sources */,
-				FAF7A84F19603F280037E2CD /* CJAViewController.m in Sources */,
+				FAE859D91960421800B71FDA /* CJAArrayDatasource.m in Sources */,
+				FAE859DB1960421800B71FDA /* CJAFetchedResultControllerDatasource.m in Sources */,
+				FAE859C71960413300B71FDA /* CJAAppDelegate.m in Sources */,
+				FAE859DA1960421800B71FDA /* CJATableViewDatasource.m in Sources */,
+				FAE859CD1960413B00B71FDA /* main.m in Sources */,
+				FAE859C81960413300B71FDA /* CJABaseTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF7A86419603F290037E2CD /* CJADataSourceTests.m in Sources */,
+				FAE859D21960419100B71FDA /* CJADataSourceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,47 +320,17 @@
 			target = FAF7A83119603F280037E2CD /* CJADataSource */;
 			targetProxy = FAE859BB1960409B00B71FDA /* PBXContainerItemProxy */;
 		};
+		FAE859BE1960409C00B71FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF7A83119603F280037E2CD /* CJADataSource */;
+			targetProxy = FAE859BD1960409C00B71FDA /* PBXContainerItemProxy */;
+		};
 		FAF7A85C19603F290037E2CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FAF7A83119603F280037E2CD /* CJADataSource */;
 			targetProxy = FAF7A85B19603F290037E2CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FAF7A83E19603F280037E2CD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF7A83F19603F280037E2CD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FAF7A84719603F280037E2CD /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF7A84819603F280037E2CD /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		FAF7A84A19603F280037E2CD /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF7A84B19603F280037E2CD /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		FAF7A86019603F290037E2CD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF7A86119603F290037E2CD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FAF7A86519603F290037E2CD /* Debug */ = {
@@ -405,9 +411,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CJADataSource/CJADataSource-Prefix.pch";
-				INFOPLIST_FILE = "CJADataSource/CJADataSource-Info.plist";
+				GCC_PREFIX_HEADER = "Example/Other Sources/CJADataSource-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Other Sources/CJADataSource-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,9 +425,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CJADataSource/CJADataSource-Prefix.pch";
-				INFOPLIST_FILE = "CJADataSource/CJADataSource-Info.plist";
+				GCC_PREFIX_HEADER = "Example/Other Sources/CJADataSource-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Other Sources/CJADataSource-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -435,12 +443,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CJADataSource/CJADataSource-Prefix.pch";
+				GCC_PREFIX_HEADER = "Example/Other Sources/CJADataSource-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "CJADataSourceTests/CJADataSourceTests-Info.plist";
+				INFOPLIST_FILE = "Tests/CJADataSourceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -457,8 +465,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CJADataSource/CJADataSource-Prefix.pch";
-				INFOPLIST_FILE = "CJADataSourceTests/CJADataSourceTests-Info.plist";
+				GCC_PREFIX_HEADER = "Example/Other Sources/CJADataSource-Prefix.pch";
+				INFOPLIST_FILE = "Tests/CJADataSourceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
