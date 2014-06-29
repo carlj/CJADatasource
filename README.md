@@ -15,9 +15,7 @@ or import the files included in the [CJADataSource](CJADataSource) folder direct
 
 # Example
 
-```
-
-
+``` objc
 UITableView *tableView = [[UITableView alloc] initWithFrame: CGRectMake(0, 0, 1, 1)];
 ...
 ...
