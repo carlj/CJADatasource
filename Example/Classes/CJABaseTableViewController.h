@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CJAViewController : UIViewController
+@interface CJABaseTableViewController : UIViewController
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

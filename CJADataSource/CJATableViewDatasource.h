@@ -15,7 +15,7 @@ typedef id(^CJADataSourceObjectBlock)(UITableView *tableView, NSIndexPath *index
 typedef CGFloat(^CJADataCellHightBlock)(UITableView *tableView, id object);
 typedef void(^CJADataObjectClickedBlock)(UITableView *tableView, NSIndexPath *indexPath, id object);
 
-@interface CJADatasource : NSObject<UITableViewDataSource, UITableViewDelegate>
+@interface CJATableViewDatasource : NSObject<UITableViewDataSource, UITableViewDelegate>
 
 - (instancetype)initWithTableView:(UITableView *)tableView
         tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary;

@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Carl Jahn. All rights reserved.
 //
 
-#import "CJADatasource.h"
+#import "CJATableViewDatasource.h"
 
-@interface CJADatasource ()
+@interface CJATableViewDatasource ()
 
 @property (nonatomic, strong) NSDictionary *cellIdentifiersAndClassesDictionary;
 
 @end
 
-@implementation CJADatasource
+@implementation CJATableViewDatasource
 
 - (instancetype)initWithTableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
     NSParameterAssert(dictionary.allKeys.count);
@@ -80,7 +80,7 @@ tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
 
     id object = [self objectForTableView:tableView indexPath:indexPath];
     
-    NSAssert(self.configureCellBlock, @"cell block isnt configured");
+    NSAssert(self.configureCellBlock, @"configure block isnt configured");
     self.configureCellBlock(tableView, indexPath, cell, object);
     
     return cell;
@@ -101,9 +101,11 @@ tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    id object = [self objectForTableView:tableView indexPath:indexPath];
+    if (!self.cellClickedBlock) {
+        return;
+    }
     
-    NSAssert(self.cellClickedBlock, @"cellClicked block isnt configured");
+    id object = [self objectForTableView:tableView indexPath:indexPath];
     self.cellClickedBlock(tableView, indexPath, object);
 }
 

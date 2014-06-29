@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Carl Jahn. All rights reserved.
 //
 
-#import "CJADatasource.h"
+#import "CJATableViewDatasource.h"
 
-@interface CJAArrayDatasource : CJADatasource
+@interface CJAArrayDatasource : CJATableViewDatasource
 
 - (instancetype)initWithItems:(NSArray *)items
              tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary;
