@@ -10,7 +10,7 @@ pod 'CJADataSource'
 ```
   
 to your ```Podfile``` and import all the needed files with ```#import <CJADataSource/CJADataSource>```  
-or import the files included in the [CJADataSource](CJADataSource) folder to you project.
+or import the files included in the [CJADataSource](CJADataSource) folder directly into your project.
  
 
 # Example
