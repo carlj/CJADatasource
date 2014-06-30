@@ -44,6 +44,7 @@ datasource.tableView = self.tableView;
 # Todo
 
 * Add Unit Tests
+* Add Mutable DataSource (with methods similar to [NSFetchedResultControllerDelegate](https://gist.github.com/carlj/e01966352a9b238c5696))
 
 # LICENSE
 
