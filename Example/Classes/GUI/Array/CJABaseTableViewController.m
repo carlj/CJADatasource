@@ -17,9 +17,9 @@
 
 @implementation CJABaseTableViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = NSLocalizedString(@"Simple array", nil);
 
     self.tableView = [[UITableView alloc] initWithFrame: CGRectMake(0, 0, 1, 1)];
     
