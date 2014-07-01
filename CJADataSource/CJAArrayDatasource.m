@@ -10,7 +10,7 @@
 
 @interface CJAArrayDatasource ()
 
-@property (nonatomic, strong) NSArray *items;
+
 
 @end
 

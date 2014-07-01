@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65036F201962828C00F46CBB /* CJAMutableArrayDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F1F1962828C00F46CBB /* CJAMutableArrayDatasource.m */; };
+		65036F23196292A100F46CBB /* NSMutableArray+CJADataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F22196292A100F46CBB /* NSMutableArray+CJADataSource.m */; };
 		FAE859C71960413300B71FDA /* CJAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859C41960413300B71FDA /* CJAAppDelegate.m */; };
 		FAE859C81960413300B71FDA /* CJABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859C61960413300B71FDA /* CJABaseTableViewController.m */; };
 		FAE859CD1960413B00B71FDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859CB1960413B00B71FDA /* main.m */; };
@@ -48,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65036F1E1962828C00F46CBB /* CJAMutableArrayDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAMutableArrayDatasource.h; sourceTree = "<group>"; };
+		65036F1F1962828C00F46CBB /* CJAMutableArrayDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAMutableArrayDatasource.m; sourceTree = "<group>"; };
+		65036F21196292A100F46CBB /* NSMutableArray+CJADataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+CJADataSource.h"; sourceTree = "<group>"; };
+		65036F22196292A100F46CBB /* NSMutableArray+CJADataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+CJADataSource.m"; sourceTree = "<group>"; };
 		FAE859C31960413300B71FDA /* CJAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAAppDelegate.h; path = Example/Classes/CJAAppDelegate.h; sourceTree = "<group>"; };
 		FAE859C41960413300B71FDA /* CJAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAAppDelegate.m; path = Example/Classes/CJAAppDelegate.m; sourceTree = "<group>"; };
 		FAE859C51960413300B71FDA /* CJABaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJABaseTableViewController.h; path = Example/Classes/CJABaseTableViewController.h; sourceTree = "<group>"; };
@@ -175,8 +181,12 @@
 				FAE859D61960421800B71FDA /* CJATableViewDatasource.m */,
 				FAE859D31960421800B71FDA /* CJAArrayDatasource.h */,
 				FAE859D41960421800B71FDA /* CJAArrayDatasource.m */,
+				65036F1E1962828C00F46CBB /* CJAMutableArrayDatasource.h */,
+				65036F1F1962828C00F46CBB /* CJAMutableArrayDatasource.m */,
 				FAE859D71960421800B71FDA /* CJAFetchedResultControllerDatasource.h */,
 				FAE859D81960421800B71FDA /* CJAFetchedResultControllerDatasource.m */,
+				65036F21196292A100F46CBB /* NSMutableArray+CJADataSource.h */,
+				65036F22196292A100F46CBB /* NSMutableArray+CJADataSource.m */,
 			);
 			path = CJADataSource;
 			sourceTree = "<group>";
@@ -301,6 +311,8 @@
 				FAE859DA1960421800B71FDA /* CJATableViewDatasource.m in Sources */,
 				FAE859CD1960413B00B71FDA /* main.m in Sources */,
 				FAE859C81960413300B71FDA /* CJABaseTableViewController.m in Sources */,
+				65036F201962828C00F46CBB /* CJAMutableArrayDatasource.m in Sources */,
+				65036F23196292A100F46CBB /* NSMutableArray+CJADataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
