@@ -8,10 +8,12 @@
 
 #import "CJATabBarController.h"
 #import "CJABaseTableViewController.h"
+#import "CJAMutableArrayTableViewController.h"
 
 @interface CJATabBarController ()
 
 @property (nonatomic, strong) UIViewController *baseTableViewController;
+@property (nonatomic, strong) UIViewController *mutableArrayTableViewController;
 
 @end
 
@@ -22,7 +24,7 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.viewControllers = @[self.baseTableViewController];
+        self.viewControllers = @[self.baseTableViewController, self.mutableArrayTableViewController];
     }
     return self;
 }
@@ -35,6 +37,14 @@
         _baseTableViewController = [[UINavigationController alloc] initWithRootViewController:baseVC];
     }
     return _baseTableViewController;
+}
+
+- (UIViewController *)mutableArrayTableViewController {
+    if (!_mutableArrayTableViewController) {
+        CJAMutableArrayTableViewController *mutableArrayVC = [CJAMutableArrayTableViewController new];
+        _mutableArrayTableViewController = [[UINavigationController alloc] initWithRootViewController:mutableArrayVC];
+    }
+    return _mutableArrayTableViewController;
 }
 
 @end

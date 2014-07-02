@@ -17,9 +17,17 @@
 
 @implementation CJABaseTableViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = NSLocalizedString(@"Simple array", nil);
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = NSLocalizedString(@"Simple array", nil);
+
 
     self.tableView = [[UITableView alloc] initWithFrame: CGRectMake(0, 0, 1, 1)];
     
