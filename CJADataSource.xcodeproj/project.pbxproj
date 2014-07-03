@@ -12,6 +12,7 @@
 		65036F291962F08600F46CBB /* CJABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F271962F08600F46CBB /* CJABaseTableViewController.m */; };
 		65036F2D1962F15600F46CBB /* CJATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F2C1962F15600F46CBB /* CJATabBarController.m */; };
 		65036F35196303AD00F46CBB /* CJAMutableArrayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */; };
+		657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */; };
 		FAE859C71960413300B71FDA /* CJAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859C41960413300B71FDA /* CJAAppDelegate.m */; };
 		FAE859CD1960413B00B71FDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859CB1960413B00B71FDA /* main.m */; };
 		FAE859CF1960414200B71FDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE859CE1960414200B71FDA /* Images.xcassets */; };
@@ -62,6 +63,8 @@
 		65036F2C1962F15600F46CBB /* CJATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJATabBarController.m; path = TabBar/CJATabBarController.m; sourceTree = "<group>"; };
 		65036F33196303AD00F46CBB /* CJAMutableArrayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAMutableArrayTableViewController.h; sourceTree = "<group>"; };
 		65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAMutableArrayTableViewController.m; sourceTree = "<group>"; };
+		657BE9EB1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAMutableArraySectionHeaderTableView.h; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.h; sourceTree = "<group>"; };
+		657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAMutableArraySectionHeaderTableView.m; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.m; sourceTree = "<group>"; };
 		FAE859C31960413300B71FDA /* CJAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAAppDelegate.h; path = Example/Classes/CJAAppDelegate.h; sourceTree = "<group>"; };
 		FAE859C41960413300B71FDA /* CJAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAAppDelegate.m; path = Example/Classes/CJAAppDelegate.m; sourceTree = "<group>"; };
 		FAE859C91960413B00B71FDA /* CJADataSource-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CJADataSource-Info.plist"; path = "Example/Other Sources/CJADataSource-Info.plist"; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 		65036F2E1962F57E00F46CBB /* MutableArray */ = {
 			isa = PBXGroup;
 			children = (
+				657BE9E9196444EC00A826EA /* Views */,
 				65036F32196303AD00F46CBB /* ViewController */,
 			);
 			name = MutableArray;
@@ -154,6 +158,23 @@
 			);
 			name = ViewController;
 			path = MutableArray/ViewController;
+			sourceTree = "<group>";
+		};
+		657BE9E9196444EC00A826EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				657BE9EA196444F800A826EA /* SectionHeaderView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		657BE9EA196444F800A826EA /* SectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				657BE9EB1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.h */,
+				657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */,
+			);
+			name = SectionHeaderView;
 			sourceTree = "<group>";
 		};
 		FAE859BF196040CA00B71FDA /* Example */ = {
@@ -367,6 +388,7 @@
 				65036F35196303AD00F46CBB /* CJAMutableArrayTableViewController.m in Sources */,
 				65036F23196292A100F46CBB /* NSMutableArray+CJADataSource.m in Sources */,
 				65036F291962F08600F46CBB /* CJABaseTableViewController.m in Sources */,
+				657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

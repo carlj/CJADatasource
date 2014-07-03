@@ -15,6 +15,11 @@ typedef id(^CJADataSourceObjectBlock)(UITableView *tableView, NSIndexPath *index
 typedef CGFloat(^CJADataCellHightBlock)(UITableView *tableView, id object);
 typedef void(^CJADataObjectClickedBlock)(UITableView *tableView, NSIndexPath *indexPath, id object);
 
+// Header footer blocks
+typedef void(^CJADataSourceConfigureSectionHeaderFooterBlock)(UITableView *tableView, NSUInteger section, id view);
+typedef NSString *(^CJADataSourceHeaderFooterIdentifierBlock)(UITableView *tableView, NSUInteger section);
+typedef CGFloat(^CJADataSourceHeaderFooterHeight)(UITableView *tableView, NSUInteger section);
+
 @interface CJATableViewDatasource : NSObject<UITableViewDataSource, UITableViewDelegate>
 
 - (instancetype)initWithTableView:(UITableView *)tableView
@@ -23,6 +28,7 @@ typedef void(^CJADataObjectClickedBlock)(UITableView *tableView, NSIndexPath *in
 - (instancetype)initWithTableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary;
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSDictionary *headerFooterIdentifiersAndClasses;
 
 @property (nonatomic, copy) CJADataSourceConfigureCellBlock configureCellBlock;
 @property (nonatomic, copy) CJADataSourceCellIdentifierBlock cellIdentifierBlock;
@@ -31,5 +37,11 @@ typedef void(^CJADataObjectClickedBlock)(UITableView *tableView, NSIndexPath *in
 @property (nonatomic, copy) CJADataCellHightBlock cellHightBlock;
 @property (nonatomic, copy) CJADataObjectClickedBlock cellClickedBlock;
 
+// Header footer blocks
+@property (nonatomic, copy) CJADataSourceConfigureSectionHeaderFooterBlock configureSectionHeaderViewBlock;
+@property (nonatomic, copy) CJADataSourceConfigureSectionHeaderFooterBlock configureSectionFooterViewBlock;
+@property (nonatomic, copy) CJADataSourceHeaderFooterIdentifierBlock headerFooterIdentifierBlock;
+@property (nonatomic, copy) CJADataSourceHeaderFooterHeight sectionHeaderHeightBlock;
+@property (nonatomic, copy) CJADataSourceHeaderFooterHeight sectionFooterHeightBlock;
 
 @end

@@ -51,10 +51,26 @@ tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
     if (!tableView) {
         return;
     }
-    
+
     _tableView.dataSource = self;
     _tableView.delegate = self;
-    [self.class registerAllClassesForDictionary:self.cellIdentifiersAndClassesDictionary inTableView:self.tableView];
+    [self.class registerCellClasses:self.cellIdentifiersAndClassesDictionary inTableView:self.tableView];
+    [self.class registerHeaderFooterClasses:self.headerFooterIdentifiersAndClasses inTableView:self.tableView];
+}
+
+- (void)setHeaderFooterIdentifiersAndClasses:(NSDictionary *)headerFooterIdentifiersAndClasses {
+    NSParameterAssert(headerFooterIdentifiersAndClasses);
+    NSParameterAssert([headerFooterIdentifiersAndClasses.allKeys count]);
+
+    if ([_headerFooterIdentifiersAndClasses isEqualToDictionary:headerFooterIdentifiersAndClasses]) {
+        return;
+    }
+
+    _headerFooterIdentifiersAndClasses = headerFooterIdentifiersAndClasses;
+    if (!self.tableView) {
+        return;
+    }
+    [self.class registerHeaderFooterClasses:self.headerFooterIdentifiersAndClasses inTableView:self.tableView];
 }
 
 #pragma mark - UITableViewDataSource Methods
@@ -98,6 +114,22 @@ tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
     return self.cellHightBlock(tableView, object);
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if (0 == [self.headerFooterIdentifiersAndClasses.allKeys count] ||
+        !self.sectionHeaderHeightBlock) {
+        return 0.0f;
+    }
+    return self.sectionHeaderHeightBlock(tableView, section);
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    if (0 == [self.headerFooterIdentifiersAndClasses.allKeys count] ||
+        !self.sectionFooterHeightBlock) {
+        return 0.0f;
+    }
+    return self.sectionFooterHeightBlock(tableView, section);
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
@@ -109,6 +141,45 @@ tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
     self.cellClickedBlock(tableView, indexPath, object);
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    NSString *identifier = nil;
+    if (0 == [self.headerFooterIdentifiersAndClasses.allKeys count]) {
+        return nil;
+    }
+    else if (1 == [self.headerFooterIdentifiersAndClasses.allKeys count]) {
+        identifier = self.headerFooterIdentifiersAndClasses.allKeys.firstObject;
+    }
+    else {
+        NSAssert(self.headerFooterIdentifierBlock, @"header footer identifier block isn't defined");
+        identifier = self.headerFooterIdentifierBlock(tableView, section);
+    }
+
+    UIView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identifier];
+    if (self.configureSectionHeaderViewBlock) {
+        self.configureSectionHeaderViewBlock(self.tableView, section, header);
+    }
+    return header;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    NSString *identifier = nil;
+    if (0 == [self.headerFooterIdentifiersAndClasses.allKeys count]) {
+        return nil;
+    }
+    else if (1 == [self.headerFooterIdentifiersAndClasses.allKeys count]) {
+        identifier = self.headerFooterIdentifiersAndClasses.allKeys.firstObject;
+    }
+    else {
+        NSAssert(self.headerFooterIdentifierBlock, @"header footer identifier block isn't defined");
+        identifier = self.headerFooterIdentifierBlock(tableView, section);
+    }
+    
+    UIView *footer = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identifier];
+    if (self.configureSectionFooterViewBlock) {
+        self.configureSectionFooterViewBlock(self.tableView, section, footer);
+    }
+    return footer;
+}
 
 #pragma mark - Helper Methods
 - (id)objectForTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
@@ -119,12 +190,12 @@ tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
     return object;
 }
 
-+ (void)registerAllClassesForDictionary:(NSDictionary *)dictionary inTableView:(UITableView *)tableView {
++ (void)registerCellClasses:(NSDictionary *)dictionary inTableView:(UITableView *)tableView {
     NSParameterAssert(tableView);
-    NSParameterAssert(dictionary.allKeys.count);
+    NSParameterAssert([dictionary.allKeys count]);
 
     for (NSString *identifier in dictionary.allKeys) {
-        
+
         Class class = dictionary[identifier];
         if (![class isSubclassOfClass: [UITableViewCell class]]) {
             continue;
@@ -133,6 +204,19 @@ tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
         [tableView registerClass:class forCellReuseIdentifier:identifier];
     }
     
+}
+
++ (void)registerHeaderFooterClasses:(NSDictionary *)dictionary inTableView:(UITableView *)tableView {
+
+    for (NSString *identifier in dictionary.allKeys) {
+        
+        Class class = dictionary[identifier];
+        if (![class isSubclassOfClass: [UIView class]]) {
+            continue;
+        }
+
+        [tableView registerClass:class forHeaderFooterViewReuseIdentifier:identifier];
+    }
 }
 
 @end

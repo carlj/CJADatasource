@@ -59,12 +59,12 @@
 - (NSMutableArray *)mutableItems {
     if (!_mutableItems) {
         _mutableItems = [NSMutableArray array];
-        if (![self.items.firstObject isMemberOfClass:[NSArray class]]) {
+        if (![[self.items.firstObject class] isSubclassOfClass:[NSArray class]]) {
             NSMutableArray *firstSectionItems = [NSMutableArray arrayWithArray:self.items];
             [_mutableItems addObject:firstSectionItems];
         } else {
             [self.items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                if ([obj isMemberOfClass:[NSArray class]]) {
+                if ([[obj class] isSubclassOfClass:[NSArray class]]) {
                     NSMutableArray *sectionItems = [NSMutableArray arrayWithArray:obj];
                     [_mutableItems addObject:sectionItems];
                 }

@@ -56,7 +56,6 @@
     }
 
     [self removeNullObjects];
-    [self removeEmptySections];
 }
 
 - (void)removeNullObjects {

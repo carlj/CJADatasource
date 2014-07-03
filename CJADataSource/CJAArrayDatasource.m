@@ -56,7 +56,7 @@ tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
         return 0;
     }
     
-    if ([self.items.firstObject isKindOfClass: [NSArray class]]) {
+    if ([[self.items.firstObject class] isSubclassOfClass:[NSArray class]]) {
         return self.items.count;
     }
     

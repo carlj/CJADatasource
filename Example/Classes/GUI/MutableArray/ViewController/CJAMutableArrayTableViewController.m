@@ -9,6 +9,7 @@
 #import "CJAMutableArrayTableViewController.h"
 #import "CJADataSource.h"
 #import "CJAMutableArrayDatasource.h"
+#import "CJAMutableArraySectionHeaderTableView.h"
 
 @interface CJAMutableArrayTableViewController ()
 
@@ -55,6 +56,19 @@
         _tableDatasource.cellClickedBlock = ^(UITableView *tableView, NSIndexPath *indexPath, NSString *text){
             NSLog(@"%@", text);
         };
+
+        Class headerFooterClass = [CJAMutableArraySectionHeaderTableView class];
+        NSString *sectionHeaderFooterID = NSStringFromClass(headerFooterClass);
+        _tableDatasource.headerFooterIdentifiersAndClasses = @{sectionHeaderFooterID : headerFooterClass};
+        _tableDatasource.sectionHeaderHeightBlock = ^(UITableView *tableView, NSUInteger section) {
+            return 30.0f;
+        };
+        __weak  typeof (self) weakself = self;
+        _tableDatasource.configureSectionHeaderViewBlock = ^(UITableView *tableView, NSUInteger section, CJAMutableArraySectionHeaderTableView *headerView) {
+            headerView.sectionIndex = section;
+            [headerView.addCellButton addTarget:weakself action:@selector(addNewCellButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+            [headerView.deleteCellButton addTarget:weakself action:@selector(deleteCellButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        };
     }
     return _tableDatasource;
 }
@@ -69,6 +83,36 @@
 
 #pragma mark - Helper methods
 
+- (void)addNewCellButtonTapped:(UIButton *)sender {
+    UIView *senderSuperview = sender.superview.superview;
+    NSAssert([[senderSuperview class] isSubclassOfClass:[CJAMutableArraySectionHeaderTableView class]], @"Parent is not CJAMutableArraySectionHeaderTableView");
+    CJAMutableArraySectionHeaderTableView *headerView = (CJAMutableArraySectionHeaderTableView *)senderSuperview;
+    NSUInteger sectionIndex = headerView.sectionIndex;
+    NSUInteger countItemsInSection = [self.tableView numberOfRowsInSection:sectionIndex];
+    NSString *text = [NSString stringWithFormat:@"New item row %d", countItemsInSection];
+    
+    [self.tableView beginUpdates];
+    [self.tableDatasource addObject:text inSection:sectionIndex];
+    [self.tableView endUpdates];
+}
+
+- (void)deleteCellButtonTapped:(UIButton *)sender {
+    UIView *senderSuperview = sender.superview.superview;
+    NSAssert([[senderSuperview class] isSubclassOfClass:[CJAMutableArraySectionHeaderTableView class]], @"Parent is not CJAMutableArraySectionHeaderTableView");
+    CJAMutableArraySectionHeaderTableView *headerView = (CJAMutableArraySectionHeaderTableView *)senderSuperview;
+    NSUInteger sectionIndex = headerView.sectionIndex;
+    NSUInteger countItemsInSection = [self.tableView numberOfRowsInSection:sectionIndex];
+    if (!countItemsInSection) {
+        return;
+    }
+
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:sectionIndex];
+    [self.tableView beginUpdates];
+    [self.tableDatasource removeObjectAtIndexPath:indexPath];
+    [self.tableView endUpdates];
+}
+
+
 + (NSArray *)tableViewItems {
     const NSUInteger countSections = 2;
     const NSUInteger countItemsInSection = 3;
@@ -77,7 +121,7 @@
         NSMutableArray *sectionItems = [NSMutableArray arrayWithCapacity:countItemsInSection];
         [allSections addObject:sectionItems];
         for (NSUInteger itemIndex = 0; itemIndex < countItemsInSection; itemIndex++) {
-            NSString *text = [NSString stringWithFormat:@"Default item row %d section %d", itemIndex, sectionIndex];
+            NSString *text = [NSString stringWithFormat:@"Default item row %d", itemIndex];
             [sectionItems addObject:text];
         }
     }
