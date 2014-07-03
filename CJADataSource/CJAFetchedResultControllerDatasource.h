@@ -11,7 +11,8 @@
 
 @interface CJAFetchedResultControllerDatasource : CJATableViewDatasource
 
-- (instancetype)initWithFetchedResultController:(NSFetchedResultsController *)controller
-             tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary;
+- (instancetype)initWithTableView:(UITableView *)tableView
+          fetchedResultController:(NSFetchedResultsController *)controller;
+
 
 @end

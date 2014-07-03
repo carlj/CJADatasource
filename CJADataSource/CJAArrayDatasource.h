@@ -10,9 +10,8 @@
 
 @interface CJAArrayDatasource : CJATableViewDatasource
 
-- (instancetype)initWithItems:(NSArray *)items
-             tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary;
-
+- (instancetype)initWithTableView:(UITableView *)tableView
+                            items:(NSArray *)items;
 
 @property (nonatomic, strong) NSArray *items;
 

@@ -44,11 +44,14 @@
 
 - (CJAMutableArrayDatasource *)tableDatasource {
     if (!_tableDatasource) {
-        NSDictionary *identifiers = @{ @"UITableViewCell" : [UITableViewCell class] };
+        
         NSArray *items = [[self class] tableViewItems];
-        _tableDatasource = [[CJAMutableArrayDatasource alloc] initWithItems:items
-                                         tableViewIdentifiersAndCellClasses:identifiers];
+        _tableDatasource = [[CJAMutableArrayDatasource alloc] initWithTableView:self.tableView items:items];
 
+        Class headerFooterClass = [CJAMutableArraySectionHeaderTableView class];
+        NSString *sectionHeaderFooterID = NSStringFromClass(headerFooterClass);
+        _tableDatasource.headerFooterIdentifiersAndClassesDictionary = @{sectionHeaderFooterID : headerFooterClass};
+        
         _tableDatasource.configureCellBlock = ^(UITableView *tableView, NSIndexPath *indexPath, UITableViewCell *cell, NSString *text){
             cell.textLabel.text = text;
         };
@@ -57,14 +60,15 @@
             NSLog(@"%@", text);
         };
 
-        Class headerFooterClass = [CJAMutableArraySectionHeaderTableView class];
-        NSString *sectionHeaderFooterID = NSStringFromClass(headerFooterClass);
-        _tableDatasource.headerFooterIdentifiersAndClasses = @{sectionHeaderFooterID : headerFooterClass};
+        
         _tableDatasource.sectionHeaderHeightBlock = ^(UITableView *tableView, NSUInteger section) {
+            
             return 30.0f;
         };
+        
         __weak  typeof (self) weakself = self;
         _tableDatasource.configureSectionHeaderViewBlock = ^(UITableView *tableView, NSUInteger section, CJAMutableArraySectionHeaderTableView *headerView) {
+
             headerView.sectionIndex = section;
             [headerView.addCellButton addTarget:weakself action:@selector(addNewCellButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
             [headerView.deleteCellButton addTarget:weakself action:@selector(deleteCellButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -89,7 +93,7 @@
     CJAMutableArraySectionHeaderTableView *headerView = (CJAMutableArraySectionHeaderTableView *)senderSuperview;
     NSUInteger sectionIndex = headerView.sectionIndex;
     NSUInteger countItemsInSection = [self.tableView numberOfRowsInSection:sectionIndex];
-    NSString *text = [NSString stringWithFormat:@"New item row %d", countItemsInSection];
+    NSString *text = [NSString stringWithFormat:@"New item row %lu", countItemsInSection];
     
     [self.tableView beginUpdates];
     [self.tableDatasource addObject:text inSection:sectionIndex];
@@ -121,7 +125,7 @@
         NSMutableArray *sectionItems = [NSMutableArray arrayWithCapacity:countItemsInSection];
         [allSections addObject:sectionItems];
         for (NSUInteger itemIndex = 0; itemIndex < countItemsInSection; itemIndex++) {
-            NSString *text = [NSString stringWithFormat:@"Default item row %d", itemIndex];
+            NSString *text = [NSString stringWithFormat:@"Default item row %lu", itemIndex];
             [sectionItems addObject:text];
         }
     }

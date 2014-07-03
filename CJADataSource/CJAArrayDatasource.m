@@ -16,12 +16,14 @@
 
 @implementation CJAArrayDatasource
 
-- (instancetype)initWithItems:(NSArray *)items
-tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary {
-    NSParameterAssert(items.count);
-    NSParameterAssert(dictionary.allKeys.count);
-    
-    self = [super initWithTableViewIdentifiersAndCellClasses: dictionary];
+- (instancetype)initWithTableView:(UITableView *)tableView
+                            items:(NSArray *)items
+{
+
+    NSParameterAssert(tableView);
+    NSParameterAssert(items);
+
+    self = [super initWithTableView:tableView];
     if (self) {
         self.items = items;
         

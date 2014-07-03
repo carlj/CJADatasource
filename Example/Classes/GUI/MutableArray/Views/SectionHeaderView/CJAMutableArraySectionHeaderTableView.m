@@ -62,7 +62,7 @@
 
 - (void)setSectionIndex:(NSUInteger)sectionIndex {
     _sectionIndex = sectionIndex;
-    NSString *text = [NSString stringWithFormat:@"Section %d", sectionIndex];
+    NSString *text = [NSString stringWithFormat:@"Section %ld", sectionIndex];
     self.sectionLabel.text = text;
 }
 
@@ -186,9 +186,6 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:text forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont boldSystemFontOfSize:25.0];
-    button.layer.borderWidth = 2.0;
-    button.layer.cornerRadius = 5.0;
-    button.layer.borderColor = [UIColor lightGrayColor].CGColor;
     button.translatesAutoresizingMaskIntoConstraints = NO;
     return button;
 }

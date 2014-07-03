@@ -16,13 +16,13 @@
 
 @implementation CJAFetchedResultControllerDatasource
 
-- (instancetype)initWithFetchedResultController:(NSFetchedResultsController *)controller
-             tableViewIdentifiersAndCellClasses:(NSDictionary *)dictionary
+- (instancetype)initWithTableView:(UITableView *)tableView
+          fetchedResultController:(NSFetchedResultsController *)controller;
 {
+    NSParameterAssert(tableView);
     NSParameterAssert(controller);
-    NSParameterAssert(dictionary.allKeys.count);
     
-    self = [super initWithTableViewIdentifiersAndCellClasses:dictionary];
+    self = [super initWithTableView:tableView];
     if (self) {
         
         self.fetchedResultController = controller;

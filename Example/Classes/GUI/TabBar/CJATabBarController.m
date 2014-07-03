@@ -21,9 +21,10 @@
 
 #pragma mark - UIViewController methods
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (instancetype)init {
+    self = [super init];
     if (self) {
+        
         self.viewControllers = @[self.baseTableViewController, self.mutableArrayTableViewController];
     }
     return self;
