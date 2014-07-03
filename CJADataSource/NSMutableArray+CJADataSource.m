@@ -11,6 +11,9 @@
 @implementation NSMutableArray (CJADataSource)
 
 - (void)insertObject:(id)object atIndexPath:(NSIndexPath *)indexPath {
+    NSParameterAssert(object);
+    NSParameterAssert(indexPath);
+    
     NSUInteger countSections = [self count];
     NSAssert(indexPath.section < countSections, @"Invalid section number");
 
@@ -24,6 +27,8 @@
 }
 
 - (NSArray *)indexPathsForObject:(id)object {
+    NSParameterAssert(object);
+    
     NSMutableArray *indexPaths = [NSMutableArray array];
     NSUInteger countSections = [self count];
     for (NSUInteger sectionIndex = 0; sectionIndex < countSections; sectionIndex++) {
@@ -45,6 +50,8 @@
 }
 
 - (void)removeObjectsAtIndexPaths:(NSArray *)indexPaths {
+    NSParameterAssert(indexPaths);
+    
     for (NSIndexPath *indexPath in indexPaths) {
         id sectionObj = self[indexPath.section];
         NSAssert([[sectionObj class] isSubclassOfClass:[NSMutableArray class]], @"Should be an NSMutableArray type object");

@@ -183,6 +183,8 @@
 #pragma mark - Helper methods
 
 + (UIButton *)createButtonWithText:(NSString *)text {
+    NSParameterAssert(text.length);
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:text forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont boldSystemFontOfSize:25.0];

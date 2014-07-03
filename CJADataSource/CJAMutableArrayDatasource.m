@@ -18,11 +18,15 @@
 @implementation CJAMutableArrayDatasource
 
 - (void)addObject:(id)object {
+    NSParameterAssert(object);
+    
     NSUInteger countSections = [self.mutableItems count];
     [self addObject:object inSection:(countSections - 1)];
 }
 
 - (void)addObject:(id)object inSection:(NSUInteger)section {
+    NSParameterAssert(object);
+    
     NSUInteger countSections = [self.mutableItems count];
     NSAssert(section < countSections, @"Invalid section number");
     id sectionObj = self.mutableItems[section];
@@ -34,17 +38,24 @@
 }
 
 - (void)insertObject:(id)object atIndexPath:(NSIndexPath *)indexPath {
+    NSParameterAssert(object);
+    NSParameterAssert(indexPath);
+    
     [self.mutableItems insertObject:object atIndexPath:indexPath];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:self.rowAnimation];
     self.items = [NSArray arrayWithArray:self.mutableItems];
 }
 
 - (void)removeObjects:(id)object {
+    NSParameterAssert(object);
+    
     NSArray *indexPaths = [self.mutableItems indexPathsForObject:object];
     [self removeObjectsAtIndexPaths:indexPaths];
 }
 
 - (void)removeObjectAtIndexPath:(NSIndexPath *)indexPath {
+    NSParameterAssert(indexPath);
+    
     [self removeObjectsAtIndexPaths:@[indexPath]];
 }
 
