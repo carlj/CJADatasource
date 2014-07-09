@@ -7,8 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "CJATestCaseThatNeedsATableView.h"
 
-@interface CJADataSourceTests : XCTestCase
+@interface CJADataSourceTests : CJATestCaseThatNeedsATableView
 
 @end
 
@@ -26,9 +27,37 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testSimpleArrayDataSource
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSArray *items = @[@"1", @"2", @"3", @"3"];
+    CJAArrayDatasource *datasource = [[CJAArrayDatasource alloc] initWithTableView: self.tableView
+                                                                             items: items];
+    
+    XCTAssertEqualObjects(self.tableView.dataSource, datasource, @"datasource wasnt setted");
+    XCTAssertEqualObjects(self.tableView.delegate, datasource, @"delegate wasnt setted");
+    
+    datasource.configureCellBlock = ^(UITableView *tableView, NSIndexPath *indexPath, UITableViewCell *cell, NSString *text){
+        XCTAssertNotNil(tableView, @"tableView is nil");
+        XCTAssertNotNil(indexPath, @"indexPath is nil");
+        XCTAssertNotNil(cell, @"tableView is nil");
+        XCTAssertNotNil(text, @"text is nil");
+        
+        XCTAssertTrue([text isKindOfClass:[NSString class]], @"we need the correct object");
+        
+        cell.textLabel.text = text;
+    };
+    
+    [self.tableView reloadData];
+    XCTAssertEqual(items.count, self.tableView.visibleCells.count, @"there arent the same items");
+    
+    NSArray *cells = self.tableView.visibleCells;
+    NSMutableArray *textFromCells = [NSMutableArray array];
+    for (UITableViewCell *cell in cells) {
+        
+        [textFromCells addObject: cell.textLabel.text];
+    }
+    
+    XCTAssertEqualObjects(textFromCells, items, @"no the same items");
 }
 
 @end

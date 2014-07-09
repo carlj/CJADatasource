@@ -18,6 +18,7 @@
 - (instancetype)initWithTableView:(UITableView *)tableView
 {
     NSParameterAssert(tableView);
+    NSParameterAssert([tableView isKindOfClass:[UITableView class]]);
 
     self = [super init];
     if (self) {
@@ -207,10 +208,9 @@
     for (NSString *identifier in dictionary.allKeys) {
         
         Class class = dictionary[identifier];
-        if (![class isSubclassOfClass: neededSubClass]) {
-            continue;
-        }
-
+        NSAssert([class isSubclassOfClass: neededSubClass], @"class '%@' isnt kind of subclass '%@'", class, neededSubClass);
+        
+        
         [tableView performSelector:selector withObject:class withObject:identifier];
     }
     

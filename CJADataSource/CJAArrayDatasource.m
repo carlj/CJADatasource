@@ -46,6 +46,7 @@
             
             return weakSelf.items[indexPath.row];
         };
+        
     }
     
     return self;
