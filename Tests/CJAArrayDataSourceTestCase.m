@@ -1,31 +1,18 @@
 //
-//  CJADataSourceTests.m
-//  CJADataSourceTests
+//  CJAArrayDataSourceTestCase.m
+//  CJADataSource
 //
-//  Created by Carl Jahn on 29.06.14.
+//  Created by Carl Jahn on 09.07.14.
 //  Copyright (c) 2014 Carl Jahn. All rights reserved.
 //
-
-#import <XCTest/XCTest.h>
 #import "CJATestCaseThatNeedsATableView.h"
 
-@interface CJADataSourceTests : CJATestCaseThatNeedsATableView
+
+@interface CJAArrayDataSourceTestCase : CJATestCaseThatNeedsATableView
 
 @end
 
-@implementation CJADataSourceTests
-
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
+@implementation CJAArrayDataSourceTestCase
 
 - (void)testSimpleArrayDataSource
 {
@@ -43,6 +30,8 @@
         XCTAssertNotNil(text, @"text is nil");
         
         XCTAssertTrue([text isKindOfClass:[NSString class]], @"we need the correct object");
+        
+        XCTAssertEqualObjects(items[indexPath.row], text, @"items arent the same");
         
         cell.textLabel.text = text;
     };
