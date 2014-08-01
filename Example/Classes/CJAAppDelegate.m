@@ -9,16 +9,29 @@
 #import "CJAAppDelegate.h"
 #import "CJATabBarController.h"
 
+#import "CJACoreDataStarter.h"
+#import "CJACoreDataInitializer.h"
+
 @implementation CJAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [self runStarters];
+
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-    //self.window.rootViewController = [CJATabBarController new];
+    self.window.rootViewController = [CJATabBarController new];
     [self.window makeKeyAndVisible];
-    
+
     return YES;
 }
 							
+- (void)runStarters {
+
+    CJAStarterFactory *factory = [CJAStarterFactory new];
+    [factory addStarterClass:[CJACoreDataStarter class]];
+    [factory addStarterClass:[CJACoreDataInitializer class]];
+    
+    [factory run];
+}
 
 @end
