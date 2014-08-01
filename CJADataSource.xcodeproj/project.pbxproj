@@ -21,6 +21,9 @@
 		6531F76A198C163E0082B798 /* CJAStarterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F769198C163E0082B798 /* CJAStarterFactory.m */; };
 		6531F76E198C16C50082B798 /* CJACoreDataStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F76D198C16C50082B798 /* CJACoreDataStarter.m */; };
 		6531F771198C17240082B798 /* CJACoreDataInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F770198C17240082B798 /* CJACoreDataInitializer.m */; };
+		6531F776198C1C490082B798 /* CJAFetchedResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F775198C1C490082B798 /* CJAFetchedResultsTableViewController.m */; };
+		6531F77B198C24AF0082B798 /* CJABaseTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F77A198C24AF0082B798 /* CJABaseTableHeaderFooterView.m */; };
+		6531F780198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F77F198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m */; };
 		657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */; };
 		FA3FC0A11965B6F600A9DF00 /* CJATestCaseThatNeedsATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC09F1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.m */; };
 		FA3FC0A319667A5500A9DF00 /* CJATableViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC0A219667A5500A9DF00 /* CJATableViewTestCase.m */; };
@@ -90,6 +93,12 @@
 		6531F76D198C16C50082B798 /* CJACoreDataStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJACoreDataStarter.m; path = Example/Classes/Helpers/Starters/CoreData/CJACoreDataStarter.m; sourceTree = "<group>"; };
 		6531F76F198C17240082B798 /* CJACoreDataInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJACoreDataInitializer.h; path = Example/Classes/Helpers/Starters/CoreData/CJACoreDataInitializer.h; sourceTree = "<group>"; };
 		6531F770198C17240082B798 /* CJACoreDataInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJACoreDataInitializer.m; path = Example/Classes/Helpers/Starters/CoreData/CJACoreDataInitializer.m; sourceTree = "<group>"; };
+		6531F774198C1C490082B798 /* CJAFetchedResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAFetchedResultsTableViewController.h; path = FetchedResultsController/CJAFetchedResultsTableViewController.h; sourceTree = "<group>"; };
+		6531F775198C1C490082B798 /* CJAFetchedResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAFetchedResultsTableViewController.m; path = FetchedResultsController/CJAFetchedResultsTableViewController.m; sourceTree = "<group>"; };
+		6531F779198C24AF0082B798 /* CJABaseTableHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJABaseTableHeaderFooterView.h; path = Common/Views/CJABaseTableHeaderFooterView.h; sourceTree = "<group>"; };
+		6531F77A198C24AF0082B798 /* CJABaseTableHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJABaseTableHeaderFooterView.m; path = Common/Views/CJABaseTableHeaderFooterView.m; sourceTree = "<group>"; };
+		6531F77E198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAFetchedResultsSectionHeaderTableView.h; path = FetchedResultsController/Views/SectionHeaderView/CJAFetchedResultsSectionHeaderTableView.h; sourceTree = "<group>"; };
+		6531F77F198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAFetchedResultsSectionHeaderTableView.m; path = FetchedResultsController/Views/SectionHeaderView/CJAFetchedResultsSectionHeaderTableView.m; sourceTree = "<group>"; };
 		657BE9EB1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAMutableArraySectionHeaderTableView.h; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.h; sourceTree = "<group>"; };
 		657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAMutableArraySectionHeaderTableView.m; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.m; sourceTree = "<group>"; };
 		8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -147,6 +156,8 @@
 		65036F241962F08600F46CBB /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				6531F777198C24690082B798 /* Common */,
+				6531F772198C1BCE0082B798 /* FetchedResultsController */,
 				65036F251962F08600F46CBB /* Array */,
 				65036F2E1962F57E00F46CBB /* MutableArray */,
 				65036F2A1962F13100F46CBB /* TabBar */,
@@ -243,6 +254,58 @@
 				6531F770198C17240082B798 /* CJACoreDataInitializer.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		6531F772198C1BCE0082B798 /* FetchedResultsController */ = {
+			isa = PBXGroup;
+			children = (
+				6531F77C198C257D0082B798 /* Views */,
+				6531F773198C1C040082B798 /* ViewController */,
+			);
+			name = FetchedResultsController;
+			sourceTree = "<group>";
+		};
+		6531F773198C1C040082B798 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6531F774198C1C490082B798 /* CJAFetchedResultsTableViewController.h */,
+				6531F775198C1C490082B798 /* CJAFetchedResultsTableViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		6531F777198C24690082B798 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6531F778198C246C0082B798 /* Views */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		6531F778198C246C0082B798 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6531F779198C24AF0082B798 /* CJABaseTableHeaderFooterView.h */,
+				6531F77A198C24AF0082B798 /* CJABaseTableHeaderFooterView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6531F77C198C257D0082B798 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6531F77D198C25840082B798 /* SectionHeaderView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6531F77D198C25840082B798 /* SectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				6531F77E198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.h */,
+				6531F77F198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m */,
+			);
+			name = SectionHeaderView;
 			sourceTree = "<group>";
 		};
 		657BE9E9196444EC00A826EA /* Views */ = {
@@ -519,6 +582,7 @@
 				FAE859DB1960421800B71FDA /* CJAFetchedResultControllerDatasource.m in Sources */,
 				FAE859C71960413300B71FDA /* CJAAppDelegate.m in Sources */,
 				FAE859DA1960421800B71FDA /* CJATableViewDatasource.m in Sources */,
+				6531F780198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m in Sources */,
 				6531F74B198C13260082B798 /* _CJADriver.m in Sources */,
 				6531F76E198C16C50082B798 /* CJACoreDataStarter.m in Sources */,
 				FAE859CD1960413B00B71FDA /* main.m in Sources */,
@@ -528,8 +592,10 @@
 				65036F35196303AD00F46CBB /* CJAMutableArrayTableViewController.m in Sources */,
 				65036F23196292A100F46CBB /* NSMutableArray+CJADataSource.m in Sources */,
 				65036F291962F08600F46CBB /* CJABaseTableViewController.m in Sources */,
+				6531F776198C1C490082B798 /* CJAFetchedResultsTableViewController.m in Sources */,
 				6531F771198C17240082B798 /* CJACoreDataInitializer.m in Sources */,
 				657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */,
+				6531F77B198C24AF0082B798 /* CJABaseTableHeaderFooterView.m in Sources */,
 				6531F74A198C13260082B798 /* _CJACar.m in Sources */,
 				6531F76A198C163E0082B798 /* CJAStarterFactory.m in Sources */,
 			);

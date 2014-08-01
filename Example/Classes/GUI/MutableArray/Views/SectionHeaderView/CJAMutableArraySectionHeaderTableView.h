@@ -8,12 +8,9 @@
 
 @import UIKit;
 
-@interface CJAMutableArraySectionHeaderTableView : UITableViewHeaderFooterView
+#import "CJABaseTableHeaderFooterView.h"
 
-@property (nonatomic, strong, readonly) UIButton *addCellButton;
-@property (nonatomic, strong, readonly) UIButton *deleteCellButton;
-@property (nonatomic, strong, readonly) UILabel  *sectionLabel;
-
+@interface CJAMutableArraySectionHeaderTableView : CJABaseTableHeaderFooterView
 
 @property (nonatomic, assign) NSUInteger sectionIndex;
 

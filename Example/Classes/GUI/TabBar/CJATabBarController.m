@@ -9,11 +9,14 @@
 #import "CJATabBarController.h"
 #import "CJABaseTableViewController.h"
 #import "CJAMutableArrayTableViewController.h"
+#import "CJAFetchedResultsTableViewController.h"
+
 
 @interface CJATabBarController ()
 
 @property (nonatomic, strong) UIViewController *baseTableViewController;
 @property (nonatomic, strong) UIViewController *mutableArrayTableViewController;
+@property (nonatomic, strong) UIViewController *fetchedResultsTableViewController;
 
 @end
 
@@ -25,7 +28,9 @@
     self = [super init];
     if (self) {
         
-        self.viewControllers = @[self.baseTableViewController, self.mutableArrayTableViewController];
+        self.viewControllers = @[self.baseTableViewController,
+                                 self.mutableArrayTableViewController,
+                                 self.fetchedResultsTableViewController];
     }
     return self;
 }
@@ -46,6 +51,14 @@
         _mutableArrayTableViewController = [[UINavigationController alloc] initWithRootViewController:mutableArrayVC];
     }
     return _mutableArrayTableViewController;
+}
+
+- (UIViewController *)fetchedResultsTableViewController {
+    if (!_fetchedResultsTableViewController) {
+        CJAFetchedResultsTableViewController *fetchedResultsVC = [CJAFetchedResultsTableViewController new];
+        _fetchedResultsTableViewController = [[UINavigationController alloc] initWithRootViewController:fetchedResultsVC];
+    }
+    return _fetchedResultsTableViewController;
 }
 
 @end
