@@ -13,6 +13,10 @@
 		65036F2D1962F15600F46CBB /* CJATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F2C1962F15600F46CBB /* CJATabBarController.m */; };
 		65036F35196303AD00F46CBB /* CJAMutableArrayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */; };
 		6531F741198C0E570082B798 /* CJADatasource.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6531F73F198C0E570082B798 /* CJADatasource.xcdatamodeld */; };
+		6531F74A198C13260082B798 /* _CJACar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F743198C13260082B798 /* _CJACar.m */; };
+		6531F74B198C13260082B798 /* _CJADriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F745198C13260082B798 /* _CJADriver.m */; };
+		6531F74C198C13260082B798 /* CJACar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F747198C13260082B798 /* CJACar.m */; };
+		6531F74D198C13260082B798 /* CJADriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F749198C13260082B798 /* CJADriver.m */; };
 		657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */; };
 		FA3FC0A11965B6F600A9DF00 /* CJATestCaseThatNeedsATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC09F1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.m */; };
 		FA3FC0A319667A5500A9DF00 /* CJATableViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC0A219667A5500A9DF00 /* CJATableViewTestCase.m */; };
@@ -67,6 +71,14 @@
 		65036F33196303AD00F46CBB /* CJAMutableArrayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAMutableArrayTableViewController.h; sourceTree = "<group>"; };
 		65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAMutableArrayTableViewController.m; sourceTree = "<group>"; };
 		6531F740198C0E570082B798 /* CJADatasource.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CJADatasource.xcdatamodel; sourceTree = "<group>"; };
+		6531F742198C13260082B798 /* _CJACar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _CJACar.h; path = Example/Classes/Model/_CJACar.h; sourceTree = "<group>"; };
+		6531F743198C13260082B798 /* _CJACar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _CJACar.m; path = Example/Classes/Model/_CJACar.m; sourceTree = "<group>"; };
+		6531F744198C13260082B798 /* _CJADriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _CJADriver.h; path = Example/Classes/Model/_CJADriver.h; sourceTree = "<group>"; };
+		6531F745198C13260082B798 /* _CJADriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _CJADriver.m; path = Example/Classes/Model/_CJADriver.m; sourceTree = "<group>"; };
+		6531F746198C13260082B798 /* CJACar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJACar.h; path = Example/Classes/Model/CJACar.h; sourceTree = "<group>"; };
+		6531F747198C13260082B798 /* CJACar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJACar.m; path = Example/Classes/Model/CJACar.m; sourceTree = "<group>"; };
+		6531F748198C13260082B798 /* CJADriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJADriver.h; path = Example/Classes/Model/CJADriver.h; sourceTree = "<group>"; };
+		6531F749198C13260082B798 /* CJADriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJADriver.m; path = Example/Classes/Model/CJADriver.m; sourceTree = "<group>"; };
 		657BE9EB1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAMutableArraySectionHeaderTableView.h; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.h; sourceTree = "<group>"; };
 		657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAMutableArraySectionHeaderTableView.m; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.m; sourceTree = "<group>"; };
 		FA3FC09E1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJATestCaseThatNeedsATableView.h; path = Tests/Base/CJATestCaseThatNeedsATableView.h; sourceTree = SOURCE_ROOT; };
@@ -170,6 +182,14 @@
 		6531F73E198C0E060082B798 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6531F742198C13260082B798 /* _CJACar.h */,
+				6531F743198C13260082B798 /* _CJACar.m */,
+				6531F744198C13260082B798 /* _CJADriver.h */,
+				6531F745198C13260082B798 /* _CJADriver.m */,
+				6531F746198C13260082B798 /* CJACar.h */,
+				6531F747198C13260082B798 /* CJACar.m */,
+				6531F748198C13260082B798 /* CJADriver.h */,
+				6531F749198C13260082B798 /* CJADriver.m */,
 				6531F73F198C0E570082B798 /* CJADatasource.xcdatamodeld */,
 			);
 			name = Model;
@@ -405,10 +425,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6531F74D198C13260082B798 /* CJADriver.m in Sources */,
+				6531F74C198C13260082B798 /* CJACar.m in Sources */,
 				FAE859D91960421800B71FDA /* CJAArrayDatasource.m in Sources */,
 				FAE859DB1960421800B71FDA /* CJAFetchedResultControllerDatasource.m in Sources */,
 				FAE859C71960413300B71FDA /* CJAAppDelegate.m in Sources */,
 				FAE859DA1960421800B71FDA /* CJATableViewDatasource.m in Sources */,
+				6531F74B198C13260082B798 /* _CJADriver.m in Sources */,
 				FAE859CD1960413B00B71FDA /* main.m in Sources */,
 				65036F201962828C00F46CBB /* CJAMutableArrayDatasource.m in Sources */,
 				65036F2D1962F15600F46CBB /* CJATabBarController.m in Sources */,
@@ -417,6 +440,7 @@
 				65036F23196292A100F46CBB /* NSMutableArray+CJADataSource.m in Sources */,
 				65036F291962F08600F46CBB /* CJABaseTableViewController.m in Sources */,
 				657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */,
+				6531F74A198C13260082B798 /* _CJACar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
