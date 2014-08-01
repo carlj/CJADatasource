@@ -12,6 +12,7 @@
 		65036F291962F08600F46CBB /* CJABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F271962F08600F46CBB /* CJABaseTableViewController.m */; };
 		65036F2D1962F15600F46CBB /* CJATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F2C1962F15600F46CBB /* CJATabBarController.m */; };
 		65036F35196303AD00F46CBB /* CJAMutableArrayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */; };
+		6531F741198C0E570082B798 /* CJADatasource.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6531F73F198C0E570082B798 /* CJADatasource.xcdatamodeld */; };
 		657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */; };
 		FA3FC0A11965B6F600A9DF00 /* CJATestCaseThatNeedsATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC09F1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.m */; };
 		FA3FC0A319667A5500A9DF00 /* CJATableViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC0A219667A5500A9DF00 /* CJATableViewTestCase.m */; };
@@ -65,6 +66,7 @@
 		65036F2C1962F15600F46CBB /* CJATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJATabBarController.m; path = TabBar/CJATabBarController.m; sourceTree = "<group>"; };
 		65036F33196303AD00F46CBB /* CJAMutableArrayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAMutableArrayTableViewController.h; sourceTree = "<group>"; };
 		65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAMutableArrayTableViewController.m; sourceTree = "<group>"; };
+		6531F740198C0E570082B798 /* CJADatasource.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CJADatasource.xcdatamodel; sourceTree = "<group>"; };
 		657BE9EB1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAMutableArraySectionHeaderTableView.h; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.h; sourceTree = "<group>"; };
 		657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAMutableArraySectionHeaderTableView.m; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.m; sourceTree = "<group>"; };
 		FA3FC09E1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJATestCaseThatNeedsATableView.h; path = Tests/Base/CJATestCaseThatNeedsATableView.h; sourceTree = SOURCE_ROOT; };
@@ -165,6 +167,14 @@
 			path = MutableArray/ViewController;
 			sourceTree = "<group>";
 		};
+		6531F73E198C0E060082B798 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6531F73F198C0E570082B798 /* CJADatasource.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		657BE9E9196444EC00A826EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +214,7 @@
 		FAE859C0196040D800B71FDA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6531F73E198C0E060082B798 /* Model */,
 				65036F241962F08600F46CBB /* GUI */,
 				FAE859C31960413300B71FDA /* CJAAppDelegate.h */,
 				FAE859C41960413300B71FDA /* CJAAppDelegate.m */,
@@ -401,6 +412,7 @@
 				FAE859CD1960413B00B71FDA /* main.m in Sources */,
 				65036F201962828C00F46CBB /* CJAMutableArrayDatasource.m in Sources */,
 				65036F2D1962F15600F46CBB /* CJATabBarController.m in Sources */,
+				6531F741198C0E570082B798 /* CJADatasource.xcdatamodeld in Sources */,
 				65036F35196303AD00F46CBB /* CJAMutableArrayTableViewController.m in Sources */,
 				65036F23196292A100F46CBB /* NSMutableArray+CJADataSource.m in Sources */,
 				65036F291962F08600F46CBB /* CJABaseTableViewController.m in Sources */,
@@ -610,6 +622,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6531F73F198C0E570082B798 /* CJADatasource.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6531F740198C0E570082B798 /* CJADatasource.xcdatamodel */,
+			);
+			currentVersion = 6531F740198C0E570082B798 /* CJADatasource.xcdatamodel */;
+			name = CJADatasource.xcdatamodeld;
+			path = Example/Classes/Model/CJADatasource.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FAF7A82A19603F280037E2CD /* Project object */;
 }
