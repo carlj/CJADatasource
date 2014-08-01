@@ -1,0 +1,18 @@
+PODS:
+  - CJALog (1.1.0)
+  - CJAMacros (2.0.3)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+
+DEPENDENCIES:
+  - CJALog (~> 1.1.0)
+  - CJAMacros (~> 2.0.1)
+  - MagicalRecord (~> 2.2)
+
+SPEC CHECKSUMS:
+  CJALog: a80d588116a3b545ab7d649f9b77be41f6c92225
+  CJAMacros: 83f14db61b75754fd3c9b5a63280ce270d27e436
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+
+COCOAPODS: 0.33.1
