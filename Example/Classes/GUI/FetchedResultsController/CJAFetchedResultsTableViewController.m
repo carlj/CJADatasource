@@ -54,10 +54,14 @@
 
 - (CJAFetchedResultControllerDatasource *)tableDatasource {
     if (!_tableDatasource) {
-        __block NSFetchedResultsController *fetchedResultsController = [CJACar MR_fetchAllGroupedBy:@"driver.name"
-                                                                              withPredicate:nil
-                                                                                   sortedBy:@"manufacturer"
-                                                                                  ascending:YES];
+        
+        
+        
+        __block NSFetchedResultsController *fetchedResultsController = [CJACar MR_fetchAllGroupedBy:nil
+                                                                                      withPredicate:nil
+                                                                                           sortedBy:CJACarAttributes.created
+                                                                                          ascending:YES];
+        
         _tableDatasource = [[CJAFetchedResultControllerDatasource alloc] initWithTableView:self.tableView
                                                                    fetchedResultController:fetchedResultsController];
         
@@ -103,7 +107,7 @@
     NSString *manufacturer = [NSString stringWithFormat:@"New car %lu", countItemsInSection];
     
     NSManagedObjectContext *defaultContext = [NSManagedObjectContext MR_defaultContext];
-    [driver newCarWithManufacturerName:manufacturer];
+    [driver newCarWithManufacturerName:manufacturer inContext:defaultContext];
     [defaultContext MR_saveToPersistentStoreAndWait];
 }
 

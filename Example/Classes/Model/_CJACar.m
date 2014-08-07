@@ -4,6 +4,7 @@
 #import "_CJACar.h"
 
 const struct CJACarAttributes CJACarAttributes = {
+	.created = @"created",
 	.manufacturer = @"manufacturer",
 };
 
@@ -43,6 +44,13 @@ const struct CJACarFetchedProperties CJACarFetchedProperties = {
 
 	return keyPaths;
 }
+
+
+
+
+@dynamic created;
+
+
 
 
 

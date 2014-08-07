@@ -5,6 +5,7 @@
 
 
 extern const struct CJACarAttributes {
+	__unsafe_unretained NSString *created;
 	__unsafe_unretained NSString *manufacturer;
 } CJACarAttributes;
 
@@ -19,6 +20,7 @@ extern const struct CJACarFetchedProperties {
 
 
 
+
 @interface CJACarID : NSManagedObjectID {}
 @end
 
@@ -27,6 +29,14 @@ extern const struct CJACarFetchedProperties {
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 - (CJACarID*)objectID;
+
+
+
+
+@property (nonatomic, strong) NSDate *created;
+
+
+//- (BOOL)validateCreated:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -55,6 +65,12 @@ extern const struct CJACarFetchedProperties {
 @end
 
 @interface _CJACar (CoreDataGeneratedPrimitiveAccessors)
+
+
+- (NSDate *)primitiveCreated;
+- (void)setPrimitiveCreated:(NSDate *)value;
+
+
 
 
 - (NSString *)primitiveManufacturer;

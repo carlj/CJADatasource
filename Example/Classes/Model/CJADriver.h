@@ -2,6 +2,6 @@
 
 @interface CJADriver : _CJADriver {}
 
-- (CJACar *)newCarWithManufacturerName:(NSString *)manufacturer;
+- (CJACar *)newCarWithManufacturerName:(NSString *)manufacturer inContext:(NSManagedObjectContext *)context;
 
 @end

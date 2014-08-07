@@ -22,17 +22,23 @@
 
     // Create drivers
     CJADriver *john = [[self class] driverInContext:defaultContext withName:@"John"];
-    CJADriver *peter = [[self class] driverInContext:defaultContext withName:@"Peter"];
     
     // Create cars
-    NSArray *drivers = @[john, peter];
+    NSArray *drivers = @[john];
     const NSUInteger countCarsPerDriver = 3;
     for (CJADriver *driver in drivers) {
         
+        NSMutableOrderedSet *newCars = [[NSMutableOrderedSet alloc] init];
         for (NSUInteger index = 0; index < countCarsPerDriver; index++) {
-            NSString *manufacturerName = [NSString stringWithFormat:@"Old car %d", index];
-            [driver newCarWithManufacturerName:manufacturerName];
+            NSString *manufacturerName = [NSString stringWithFormat:@"Old car %ld", (long)index];
+            CJACar *car = [driver newCarWithManufacturerName:manufacturerName inContext: defaultContext];
+            
+            [newCars addObject: car];
+            
+            //[driver addCarsObject: car];
         }
+        
+        driver.cars = newCars;
 
     }
 

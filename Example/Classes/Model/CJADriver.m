@@ -3,18 +3,16 @@
 
 @implementation CJADriver
 
-- (CJACar *)newCarWithManufacturerName:(NSString *)manufacturer {
+- (CJACar *)newCarWithManufacturerName:(NSString *)manufacturer inContext:(NSManagedObjectContext *)context {
     NSParameterAssert(manufacturer);
+    NSParameterAssert(context);
 
     NSManagedObjectContext *defaultContext = [NSManagedObjectContext MR_defaultContext];
     CJACar *car = [CJACar insertInManagedObjectContext:defaultContext];
     car.manufacturer = manufacturer;
     car.driver = self;
-
-    NSMutableOrderedSet *allCars = [NSMutableOrderedSet orderedSetWithOrderedSet:self.cars];
-    [allCars addObject:car];
-    self.cars = allCars;
-
+    car.created = [NSDate date];
+    
     return car;
 }
 

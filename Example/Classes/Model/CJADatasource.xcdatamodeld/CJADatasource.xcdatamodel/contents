@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="CJACar" representedClassName="CJACar" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="manufacturer" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="driver" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CJADriver" inverseName="cars" inverseEntity="CJADriver" syncable="YES"/>
     </entity>
@@ -9,7 +10,7 @@
         <relationship name="cars" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CJACar" inverseName="driver" inverseEntity="CJACar" syncable="YES"/>
     </entity>
     <elements>
+        <element name="CJACar" positionX="-54" positionY="-9" width="128" height="90"/>
         <element name="CJADriver" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="CJACar" positionX="-54" positionY="-9" width="128" height="73"/>
     </elements>
 </model>
