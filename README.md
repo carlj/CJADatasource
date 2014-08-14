@@ -2,6 +2,8 @@
 
 Everyone is writing his own TableView/CollectionView/PageViewController DataSource that is block based, so here is mine.
 
+[![Build Status](https://travis-ci.org/carlj/CJADatasource.svg?branch=master)](https://travis-ci.org/carlj/CJADatasource)
+
 # Usage
 
 Just add
