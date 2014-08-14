@@ -16,4 +16,6 @@
 #import "CJAArrayDatasource.h"
 #import "CJAFetchedResultControllerDatasource.h"
 
+#import "CJAPageViewControllerDatasource.h"
+
 #endif /* _CJADataSource_ */
