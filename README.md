@@ -44,9 +44,7 @@ datasource.tableView = self.tableView;
 # Todo
 
 * Add Unit Tests
-* Add better Example
 * Add support for CollectionView
-* Add support for UIPageViewController
 
 # LICENSE
 
