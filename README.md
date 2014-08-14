@@ -45,6 +45,7 @@ datasource.tableView = self.tableView;
 
 * Add Unit Tests
 * Add support for CollectionView
+* Update Docu
 
 # LICENSE
 
