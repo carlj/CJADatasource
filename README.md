@@ -1,6 +1,8 @@
 # CJADataSource
 
-Everyone is writing his own TableView DataSource that is block based, so here is mine.
+Everyone is writing his own TableView/CollectionView/PageViewController DataSource that is block based, so here is mine.
+
+[![Build Status](https://travis-ci.org/carlj/CJADatasource.svg?branch=master)](https://travis-ci.org/carlj/CJADatasource)
 
 # Usage
 
@@ -44,9 +46,8 @@ datasource.tableView = self.tableView;
 # Todo
 
 * Add Unit Tests
-* Add better Example
 * Add support for CollectionView
-* Add support for UIPageViewController
+* Update Docu
 
 # LICENSE
 
