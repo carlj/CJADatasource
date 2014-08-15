@@ -762,6 +762,7 @@
 		};
 		FAF7A86B19603F290037E2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -784,6 +785,7 @@
 		};
 		FAF7A86C19603F290037E2CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource";
 				FRAMEWORK_SEARCH_PATHS = (

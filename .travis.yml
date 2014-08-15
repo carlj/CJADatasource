@@ -1,3 +1,4 @@
 language: objective-c
 xcode_workspace: CJADataSource.xcworkspace # path to your xcodeproj folder
-xcode_scheme: CJADataSourceTests
+xcode_scheme: CJADataSource
+xcode_sdk: iphonesimulator7.1
