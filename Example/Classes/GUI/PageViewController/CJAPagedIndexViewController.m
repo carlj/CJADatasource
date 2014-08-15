@@ -44,6 +44,7 @@
         _textLabel = [[UILabel alloc] initWithFrame: CGRectZero];
         _textLabel.font = [UIFont boldSystemFontOfSize:160.0f];
         _textLabel.textAlignment = NSTextAlignmentCenter;
+        _textLabel.adjustsFontSizeToFitWidth = YES;
     }
     
     return _textLabel;
