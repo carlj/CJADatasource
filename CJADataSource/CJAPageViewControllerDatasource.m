@@ -137,10 +137,24 @@
     
     __block typeof(CJAPageViewControllerDatasourceAnimationCompletionBlock) blockCompleted = completed;
     __weak typeof(self) weakSelf = self;
-    [self.pageViewController setViewControllers:@[newViewController]
+    NSArray *viewControllers = @[newViewController];
+    [self.pageViewController setViewControllers:viewControllers
                                       direction:direction
                                        animated:animated
                                      completion:^(BOOL finished){
+                                         
+                                         if (finished && animated) {
+                                             
+                                             //http://stackoverflow.com/questions/12939280/uipageviewcontroller-navigates-to-wrong-page-with-scroll-transition-style/12939384#12939384
+                                             dispatch_async(dispatch_get_main_queue(), ^{
+                                                 [weakSelf.pageViewController setViewControllers:viewControllers
+                                                                                       direction:direction
+                                                                                        animated:NO
+                                                                                      completion:nil];
+                                             });
+                                             
+                                         }
+
                                          
                                          weakSelf.inTransition = NO;
                                          if (blockCompleted) {
