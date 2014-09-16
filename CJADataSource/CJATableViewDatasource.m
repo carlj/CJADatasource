@@ -197,9 +197,10 @@
     return object;
 }
 
+
 + (void)registerClasses:(NSDictionary *)dictionary
             inTableView:(UITableView *)tableView
-         isHeaderFooter:(BOOL)isHeaderFooter
+               isHeader:(BOOL)isHeader
          neededSubClass:(Class)neededSubClass
 {
     
@@ -210,7 +211,7 @@
         NSString* classNameAsString = NSStringFromClass(class);
         UINib* tableCellAsNib;
         
-        NSString* cellNameWithXibExtension = [[NSBundle mainBundle] pathForResource:classNameAsString ofType:@"nib"];
+        NSString *cellNameWithXibExtension = [[NSBundle mainBundle] pathForResource:classNameAsString ofType:@"nib"];
         BOOL xibExistsForCell = [[NSFileManager defaultManager] fileExistsAtPath:cellNameWithXibExtension];
         if (xibExistsForCell) {
             //unfortunately, I have to do this hack, because it seems, that nibWithNibName return a nib that isn't null
@@ -218,15 +219,15 @@
             tableCellAsNib = [UINib nibWithNibName:classNameAsString bundle:nil];
         }
         
-        if (tableCellAsNib != nil) {
-            if (isHeaderFooter) {
+        if (tableCellAsNib) {
+            if (isHeader) {
                 [tableView registerNib:tableCellAsNib forHeaderFooterViewReuseIdentifier:identifier];
             } else {
                 [tableView registerNib:tableCellAsNib forCellReuseIdentifier:identifier];
             }
             
         } else {
-            if (isHeaderFooter) {
+            if (isHeader) {
                 [tableView registerClass:class forHeaderFooterViewReuseIdentifier:identifier];
             } else {
                 [tableView registerClass:class forCellReuseIdentifier:identifier];
@@ -241,7 +242,7 @@
     
     [self registerClasses:dictionary
               inTableView:tableView
-           isHeaderFooter:NO
+                 isHeader:NO
            neededSubClass:[UITableViewCell class]];
 }
 
@@ -249,7 +250,7 @@
     
     [self registerClasses:dictionary
               inTableView:tableView
-           isHeaderFooter:YES
+                 isHeader:YES
            neededSubClass:[UIView class]];
 }
 
