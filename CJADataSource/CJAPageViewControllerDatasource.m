@@ -142,19 +142,16 @@
                                       direction:direction
                                        animated:animated
                                      completion:^(BOOL finished){
-                                         
-                                         if (finished && animated) {
-                                             
-                                             //http://stackoverflow.com/questions/12939280/uipageviewcontroller-navigates-to-wrong-page-with-scroll-transition-style/12939384#12939384
-                                             dispatch_async(dispatch_get_main_queue(), ^{
-                                                 [weakSelf.pageViewController setViewControllers:viewControllers
-                                                                                       direction:direction
-                                                                                        animated:NO
-                                                                                      completion:nil];
-                                             });
-                                             
-                                         }
 
+                                         if (finished &&
+                                             animated &&
+                                             UIPageViewControllerTransitionStyleScroll == weakSelf.pageViewController.transitionStyle) {
+                                             
+                                             //there is a caching problem with the UIPageViewController and
+                                             //the UIPageViewControllerTransitionStyleScroll transition
+                                             //http://stackoverflow.com/questions/12939280/uipageviewcontroller-navigates-to-wrong-page-with-scroll-transition-style/12939384#12939384
+                                             [weakSelf resetThePageViewControllerViewControllerStackWithViewControllers:viewControllers];
+                                         }
                                          
                                          weakSelf.inTransition = NO;
                                          if (blockCompleted) {
@@ -167,6 +164,27 @@
     self.currentIndex = index;
     
     return YES;
+}
+
+- (void)resetThePageViewControllerViewControllerStackWithViewControllers:(NSArray *)viewControllers {
+    
+    dispatch_async(dispatch_get_main_queue(), ^(void){
+
+        //and there is a memory issue witht UIPageViewController, if you dont set the 'viewControllers' twice
+        //the viewController's dont get a dealloc call.
+        //thats why we set at first a empty viewcontroller and than the right given viewControllers
+        //to fix the caching bug and also to fix the memory issue
+        [self.pageViewController setViewControllers:@[[UIViewController new]]
+                                          direction:UIPageViewControllerNavigationDirectionForward
+                                           animated:NO
+                                         completion:nil];
+
+        [self.pageViewController setViewControllers:viewControllers
+                                          direction:UIPageViewControllerNavigationDirectionForward
+                                           animated:NO
+                                         completion:nil];
+    });
+    
 }
 
 - (UIViewController<CJAPageViewControllerIndexedProtocol> *)viewControllerForIndex:(NSUInteger)index {
