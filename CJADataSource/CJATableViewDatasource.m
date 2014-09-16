@@ -210,7 +210,7 @@
         NSString* classNameAsString = NSStringFromClass(class);
         UINib* tableCellAsNib;
         
-        NSString* cellNameWithXibExtension = [NSString stringWithFormat:@"%@.xib",classNameAsString];
+        NSString* cellNameWithXibExtension = [[NSBundle mainBundle] pathForResource:classNameAsString ofType:@"nib"];
         BOOL xibExistsForCell = [[NSFileManager defaultManager] fileExistsAtPath:cellNameWithXibExtension];
         if (xibExistsForCell) {
             //unfortunately, I have to do this hack, because it seems, that nibWithNibName return a nib that isn't null
