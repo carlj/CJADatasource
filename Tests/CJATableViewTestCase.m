@@ -126,7 +126,7 @@
                                               @"HeaderFooterTest2" : [UIView class]
                                               };
     
-    XCTAssertThrows(dataSource.headerFooterIdentifiersAndClassesDictionary = headerFooterIdentifiers, @"setting with the wrong classes doenst throw an exception");
+    XCTAssertThrows(dataSource.headerFooterIdentifiersAndClassesDictionary = headerFooterIdentifiers, @"setting with the wrong classes doesn't throw an exception");
 }
 
 - (void)testSettingBlockProperties

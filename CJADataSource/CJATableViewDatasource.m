@@ -197,11 +197,10 @@
     return object;
 }
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+
 + (void)registerClasses:(NSDictionary *)dictionary
             inTableView:(UITableView *)tableView
-            forSelector:(SEL)selector
+               isHeader:(BOOL)isHeader
          neededSubClass:(Class)neededSubClass
 {
     
@@ -209,19 +208,41 @@
         
         Class class = dictionary[identifier];
         NSAssert([class isSubclassOfClass: neededSubClass], @"class '%@' isnt kind of subclass '%@'", class, neededSubClass);
+        NSString* classNameAsString = NSStringFromClass(class);
+        UINib* tableCellAsNib;
         
+        NSString *cellNameWithXibExtension = [[NSBundle mainBundle] pathForResource:classNameAsString ofType:@"nib"];
+        BOOL xibExistsForCell = [[NSFileManager defaultManager] fileExistsAtPath:cellNameWithXibExtension];
+        if (xibExistsForCell) {
+            //unfortunately, I have to do this hack, because it seems, that nibWithNibName return a nib that isn't null
+            //for UITableViewCell & UITableViewHeaderFooterView
+            tableCellAsNib = [UINib nibWithNibName:classNameAsString bundle:nil];
+        }
         
-        [tableView performSelector:selector withObject:class withObject:identifier];
+        if (tableCellAsNib) {
+            if (isHeader) {
+                [tableView registerNib:tableCellAsNib forHeaderFooterViewReuseIdentifier:identifier];
+            } else {
+                [tableView registerNib:tableCellAsNib forCellReuseIdentifier:identifier];
+            }
+            
+        } else {
+            if (isHeader) {
+                [tableView registerClass:class forHeaderFooterViewReuseIdentifier:identifier];
+            } else {
+                [tableView registerClass:class forCellReuseIdentifier:identifier];
+            }
+        }
+        
     }
     
 }
-#pragma clang diagnostic pop
 
 + (void)registerCellClasses:(NSDictionary *)dictionary inTableView:(UITableView *)tableView {
-
+    
     [self registerClasses:dictionary
               inTableView:tableView
-              forSelector:@selector(registerClass:forCellReuseIdentifier:)
+                 isHeader:NO
            neededSubClass:[UITableViewCell class]];
 }
 
@@ -229,7 +250,7 @@
     
     [self registerClasses:dictionary
               inTableView:tableView
-              forSelector:@selector(registerClass:forHeaderFooterViewReuseIdentifier:)
+                 isHeader:YES
            neededSubClass:[UIView class]];
 }
 
