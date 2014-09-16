@@ -34,7 +34,7 @@
 - (void)setIndex:(NSUInteger)index {
     _index = index;
 
-    self.textLabel.text = [NSString stringWithFormat:@"%ld", _index];
+    self.textLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)_index];
 }
 
 - (UILabel *)textLabel {

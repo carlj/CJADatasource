@@ -93,7 +93,7 @@
     CJAMutableArraySectionHeaderTableView *headerView = (CJAMutableArraySectionHeaderTableView *)senderSuperview;
     NSUInteger sectionIndex = headerView.sectionIndex;
     NSUInteger countItemsInSection = [self.tableView numberOfRowsInSection:sectionIndex];
-    NSString *text = [NSString stringWithFormat:@"New item row %lu", countItemsInSection];
+    NSString *text = [NSString stringWithFormat:@"New item row %lu", (unsigned long)countItemsInSection];
     
     [self.tableView beginUpdates];
     [self.tableDatasource addObject:text inSection:sectionIndex];
@@ -125,7 +125,7 @@
         NSMutableArray *sectionItems = [NSMutableArray arrayWithCapacity:countItemsInSection];
         [allSections addObject:sectionItems];
         for (NSUInteger itemIndex = 0; itemIndex < countItemsInSection; itemIndex++) {
-            NSString *text = [NSString stringWithFormat:@"Default item row %lu", itemIndex];
+            NSString *text = [NSString stringWithFormat:@"Default item row %lu", (unsigned long)itemIndex];
             [sectionItems addObject:text];
         }
     }

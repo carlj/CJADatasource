@@ -104,7 +104,7 @@
     CJADriver *driver = headerView.driver;
     NSUInteger sectionIndex = headerView.sectionIndex;
     NSUInteger countItemsInSection = [self.tableView numberOfRowsInSection:sectionIndex];
-    NSString *manufacturer = [NSString stringWithFormat:@"New car %lu", countItemsInSection];
+    NSString *manufacturer = [NSString stringWithFormat:@"New car %lu", (unsigned long)countItemsInSection];
     
     NSManagedObjectContext *defaultContext = [NSManagedObjectContext MR_defaultContext];
     [driver newCarWithManufacturerName:manufacturer inContext:defaultContext];

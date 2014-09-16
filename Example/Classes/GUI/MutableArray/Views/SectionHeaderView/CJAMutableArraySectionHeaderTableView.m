@@ -14,7 +14,7 @@
 
 - (void)setSectionIndex:(NSUInteger)sectionIndex {
     _sectionIndex = sectionIndex;
-    NSString *text = [NSString stringWithFormat:@"Section %ld", sectionIndex];
+    NSString *text = [NSString stringWithFormat:@"Section %lu", (unsigned long)sectionIndex];
     self.sectionLabel.text = text;
 }
 
