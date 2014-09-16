@@ -71,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		281DA597325E4191B36D0C51 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54736B2519C861D900320826 /* CJADataSource.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CJADataSource.podspec; sourceTree = "<group>"; };
 		65036F1E1962828C00F46CBB /* CJAMutableArrayDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAMutableArrayDatasource.h; sourceTree = "<group>"; };
 		65036F1F1962828C00F46CBB /* CJAMutableArrayDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAMutableArrayDatasource.m; sourceTree = "<group>"; };
 		65036F21196292A100F46CBB /* NSMutableArray+CJADataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+CJADataSource.h"; sourceTree = "<group>"; };
@@ -398,6 +399,7 @@
 		FAF7A82919603F280037E2CD = {
 			isa = PBXGroup;
 			children = (
+				54736B2519C861D900320826 /* CJADataSource.podspec */,
 				FAF7A83B19603F280037E2CD /* CJADataSource */,
 				FAE859BF196040CA00B71FDA /* Example */,
 				FAF7A85D19603F290037E2CD /* CJADataSourceTests */,
