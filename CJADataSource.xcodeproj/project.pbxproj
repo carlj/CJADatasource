@@ -1,854 +1,2337 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		30D863F608934575A6C3A9A4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 281DA597325E4191B36D0C51 /* libPods.a */; };
-		65036F201962828C00F46CBB /* CJAMutableArrayDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F1F1962828C00F46CBB /* CJAMutableArrayDatasource.m */; };
-		65036F23196292A100F46CBB /* NSMutableArray+CJADataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F22196292A100F46CBB /* NSMutableArray+CJADataSource.m */; };
-		65036F291962F08600F46CBB /* CJABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F271962F08600F46CBB /* CJABaseTableViewController.m */; };
-		65036F2D1962F15600F46CBB /* CJATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F2C1962F15600F46CBB /* CJATabBarController.m */; };
-		65036F35196303AD00F46CBB /* CJAMutableArrayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */; };
-		6531F741198C0E570082B798 /* CJADatasource.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6531F73F198C0E570082B798 /* CJADatasource.xcdatamodeld */; };
-		6531F74A198C13260082B798 /* _CJACar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F743198C13260082B798 /* _CJACar.m */; };
-		6531F74B198C13260082B798 /* _CJADriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F745198C13260082B798 /* _CJADriver.m */; };
-		6531F74C198C13260082B798 /* CJACar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F747198C13260082B798 /* CJACar.m */; };
-		6531F74D198C13260082B798 /* CJADriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F749198C13260082B798 /* CJADriver.m */; };
-		6531F76A198C163E0082B798 /* CJAStarterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F769198C163E0082B798 /* CJAStarterFactory.m */; };
-		6531F76E198C16C50082B798 /* CJACoreDataStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F76D198C16C50082B798 /* CJACoreDataStarter.m */; };
-		6531F771198C17240082B798 /* CJACoreDataInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F770198C17240082B798 /* CJACoreDataInitializer.m */; };
-		6531F776198C1C490082B798 /* CJAFetchedResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F775198C1C490082B798 /* CJAFetchedResultsTableViewController.m */; };
-		6531F77B198C24AF0082B798 /* CJABaseTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F77A198C24AF0082B798 /* CJABaseTableHeaderFooterView.m */; };
-		6531F780198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531F77F198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m */; };
-		657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */; };
-		FA3FC0A11965B6F600A9DF00 /* CJATestCaseThatNeedsATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC09F1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.m */; };
-		FA3FC0A319667A5500A9DF00 /* CJATableViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FC0A219667A5500A9DF00 /* CJATableViewTestCase.m */; };
-		FA9F9E0E199D155000509839 /* CJAPageViewControllerDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F9E0D199D155000509839 /* CJAPageViewControllerDatasource.m */; };
-		FA9F9E12199D16CD00509839 /* CJAPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F9E11199D16CD00509839 /* CJAPageViewController.m */; };
-		FA9F9E15199D170000509839 /* CJAPagedIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F9E14199D170000509839 /* CJAPagedIndexViewController.m */; };
-		FADE3118196D4BD6009E3389 /* CJAArrayDataSourceTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE3117196D4BD6009E3389 /* CJAArrayDataSourceTestCase.m */; };
-		FAE859C71960413300B71FDA /* CJAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859C41960413300B71FDA /* CJAAppDelegate.m */; };
-		FAE859CD1960413B00B71FDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859CB1960413B00B71FDA /* main.m */; };
-		FAE859CF1960414200B71FDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE859CE1960414200B71FDA /* Images.xcassets */; };
-		FAE859D91960421800B71FDA /* CJAArrayDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859D41960421800B71FDA /* CJAArrayDatasource.m */; };
-		FAE859DA1960421800B71FDA /* CJATableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859D61960421800B71FDA /* CJATableViewDatasource.m */; };
-		FAE859DB1960421800B71FDA /* CJAFetchedResultControllerDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE859D81960421800B71FDA /* CJAFetchedResultControllerDatasource.m */; };
-		FAF7A83619603F280037E2CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83519603F280037E2CD /* Foundation.framework */; };
-		FAF7A83819603F280037E2CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83719603F280037E2CD /* CoreGraphics.framework */; };
-		FAF7A83A19603F280037E2CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83919603F280037E2CD /* UIKit.framework */; };
-		FAF7A85819603F280037E2CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A85719603F280037E2CD /* XCTest.framework */; };
-		FAF7A85919603F290037E2CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83519603F280037E2CD /* Foundation.framework */; };
-		FAF7A85A19603F290037E2CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A83919603F280037E2CD /* UIKit.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FAE859BB1960409B00B71FDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAF7A82A19603F280037E2CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAF7A83119603F280037E2CD;
-			remoteInfo = CJADataSource;
-		};
-		FAE859BD1960409C00B71FDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAF7A82A19603F280037E2CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAF7A83119603F280037E2CD;
-			remoteInfo = CJADataSource;
-		};
-		FAF7A85B19603F290037E2CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAF7A82A19603F280037E2CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAF7A83119603F280037E2CD;
-			remoteInfo = CJADataSource;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		281DA597325E4191B36D0C51 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		54736B2519C861D900320826 /* CJADataSource.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CJADataSource.podspec; sourceTree = "<group>"; };
-		65036F1E1962828C00F46CBB /* CJAMutableArrayDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAMutableArrayDatasource.h; sourceTree = "<group>"; };
-		65036F1F1962828C00F46CBB /* CJAMutableArrayDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAMutableArrayDatasource.m; sourceTree = "<group>"; };
-		65036F21196292A100F46CBB /* NSMutableArray+CJADataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+CJADataSource.h"; sourceTree = "<group>"; };
-		65036F22196292A100F46CBB /* NSMutableArray+CJADataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+CJADataSource.m"; sourceTree = "<group>"; };
-		65036F261962F08600F46CBB /* CJABaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJABaseTableViewController.h; sourceTree = "<group>"; };
-		65036F271962F08600F46CBB /* CJABaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJABaseTableViewController.m; sourceTree = "<group>"; };
-		65036F2B1962F15600F46CBB /* CJATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJATabBarController.h; path = TabBar/CJATabBarController.h; sourceTree = "<group>"; };
-		65036F2C1962F15600F46CBB /* CJATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJATabBarController.m; path = TabBar/CJATabBarController.m; sourceTree = "<group>"; };
-		65036F33196303AD00F46CBB /* CJAMutableArrayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAMutableArrayTableViewController.h; sourceTree = "<group>"; };
-		65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAMutableArrayTableViewController.m; sourceTree = "<group>"; };
-		6531F740198C0E570082B798 /* CJADatasource.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CJADatasource.xcdatamodel; sourceTree = "<group>"; };
-		6531F742198C13260082B798 /* _CJACar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _CJACar.h; path = Example/Classes/Model/_CJACar.h; sourceTree = "<group>"; };
-		6531F743198C13260082B798 /* _CJACar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _CJACar.m; path = Example/Classes/Model/_CJACar.m; sourceTree = "<group>"; };
-		6531F744198C13260082B798 /* _CJADriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _CJADriver.h; path = Example/Classes/Model/_CJADriver.h; sourceTree = "<group>"; };
-		6531F745198C13260082B798 /* _CJADriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _CJADriver.m; path = Example/Classes/Model/_CJADriver.m; sourceTree = "<group>"; };
-		6531F746198C13260082B798 /* CJACar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJACar.h; path = Example/Classes/Model/CJACar.h; sourceTree = "<group>"; };
-		6531F747198C13260082B798 /* CJACar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJACar.m; path = Example/Classes/Model/CJACar.m; sourceTree = "<group>"; };
-		6531F748198C13260082B798 /* CJADriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJADriver.h; path = Example/Classes/Model/CJADriver.h; sourceTree = "<group>"; };
-		6531F749198C13260082B798 /* CJADriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJADriver.m; path = Example/Classes/Model/CJADriver.m; sourceTree = "<group>"; };
-		6531F768198C163E0082B798 /* CJAStarterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAStarterFactory.h; path = Example/Classes/Helpers/Starters/Factory/CJAStarterFactory.h; sourceTree = "<group>"; };
-		6531F769198C163E0082B798 /* CJAStarterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAStarterFactory.m; path = Example/Classes/Helpers/Starters/Factory/CJAStarterFactory.m; sourceTree = "<group>"; };
-		6531F76C198C16C50082B798 /* CJACoreDataStarter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJACoreDataStarter.h; path = Example/Classes/Helpers/Starters/CoreData/CJACoreDataStarter.h; sourceTree = "<group>"; };
-		6531F76D198C16C50082B798 /* CJACoreDataStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJACoreDataStarter.m; path = Example/Classes/Helpers/Starters/CoreData/CJACoreDataStarter.m; sourceTree = "<group>"; };
-		6531F76F198C17240082B798 /* CJACoreDataInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJACoreDataInitializer.h; path = Example/Classes/Helpers/Starters/CoreData/CJACoreDataInitializer.h; sourceTree = "<group>"; };
-		6531F770198C17240082B798 /* CJACoreDataInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJACoreDataInitializer.m; path = Example/Classes/Helpers/Starters/CoreData/CJACoreDataInitializer.m; sourceTree = "<group>"; };
-		6531F774198C1C490082B798 /* CJAFetchedResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAFetchedResultsTableViewController.h; path = FetchedResultsController/CJAFetchedResultsTableViewController.h; sourceTree = "<group>"; };
-		6531F775198C1C490082B798 /* CJAFetchedResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAFetchedResultsTableViewController.m; path = FetchedResultsController/CJAFetchedResultsTableViewController.m; sourceTree = "<group>"; };
-		6531F779198C24AF0082B798 /* CJABaseTableHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJABaseTableHeaderFooterView.h; path = Common/Views/CJABaseTableHeaderFooterView.h; sourceTree = "<group>"; };
-		6531F77A198C24AF0082B798 /* CJABaseTableHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJABaseTableHeaderFooterView.m; path = Common/Views/CJABaseTableHeaderFooterView.m; sourceTree = "<group>"; };
-		6531F77E198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAFetchedResultsSectionHeaderTableView.h; path = FetchedResultsController/Views/SectionHeaderView/CJAFetchedResultsSectionHeaderTableView.h; sourceTree = "<group>"; };
-		6531F77F198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAFetchedResultsSectionHeaderTableView.m; path = FetchedResultsController/Views/SectionHeaderView/CJAFetchedResultsSectionHeaderTableView.m; sourceTree = "<group>"; };
-		657BE9EB1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAMutableArraySectionHeaderTableView.h; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.h; sourceTree = "<group>"; };
-		657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAMutableArraySectionHeaderTableView.m; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.m; sourceTree = "<group>"; };
-		8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		FA3FC09E1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJATestCaseThatNeedsATableView.h; path = Tests/Base/CJATestCaseThatNeedsATableView.h; sourceTree = SOURCE_ROOT; };
-		FA3FC09F1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJATestCaseThatNeedsATableView.m; path = Tests/Base/CJATestCaseThatNeedsATableView.m; sourceTree = SOURCE_ROOT; };
-		FA3FC0A219667A5500A9DF00 /* CJATableViewTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJATableViewTestCase.m; path = Tests/CJATableViewTestCase.m; sourceTree = SOURCE_ROOT; };
-		FA9F9E0C199D155000509839 /* CJAPageViewControllerDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAPageViewControllerDatasource.h; sourceTree = "<group>"; };
-		FA9F9E0D199D155000509839 /* CJAPageViewControllerDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAPageViewControllerDatasource.m; sourceTree = "<group>"; };
-		FA9F9E10199D16CD00509839 /* CJAPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAPageViewController.h; path = PageViewController/CJAPageViewController.h; sourceTree = "<group>"; };
-		FA9F9E11199D16CD00509839 /* CJAPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAPageViewController.m; path = PageViewController/CJAPageViewController.m; sourceTree = "<group>"; };
-		FA9F9E13199D170000509839 /* CJAPagedIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAPagedIndexViewController.h; path = PageViewController/CJAPagedIndexViewController.h; sourceTree = "<group>"; };
-		FA9F9E14199D170000509839 /* CJAPagedIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAPagedIndexViewController.m; path = PageViewController/CJAPagedIndexViewController.m; sourceTree = "<group>"; };
-		FADE3117196D4BD6009E3389 /* CJAArrayDataSourceTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAArrayDataSourceTestCase.m; path = Tests/CJAArrayDataSourceTestCase.m; sourceTree = SOURCE_ROOT; };
-		FAE859C31960413300B71FDA /* CJAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAAppDelegate.h; path = Example/Classes/CJAAppDelegate.h; sourceTree = "<group>"; };
-		FAE859C41960413300B71FDA /* CJAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAAppDelegate.m; path = Example/Classes/CJAAppDelegate.m; sourceTree = "<group>"; };
-		FAE859C91960413B00B71FDA /* CJADataSource-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CJADataSource-Info.plist"; path = "Example/Other Sources/CJADataSource-Info.plist"; sourceTree = "<group>"; };
-		FAE859CA1960413B00B71FDA /* CJADataSource-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CJADataSource-Prefix.pch"; path = "Example/Other Sources/CJADataSource-Prefix.pch"; sourceTree = "<group>"; };
-		FAE859CB1960413B00B71FDA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Example/Other Sources/main.m"; sourceTree = "<group>"; };
-		FAE859CE1960414200B71FDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Example/Resources/Images.xcassets; sourceTree = "<group>"; };
-		FAE859D01960418900B71FDA /* CJADataSourceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CJADataSourceTests-Info.plist"; path = "Tests/CJADataSourceTests-Info.plist"; sourceTree = SOURCE_ROOT; };
-		FAE859D31960421800B71FDA /* CJAArrayDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAArrayDatasource.h; sourceTree = "<group>"; };
-		FAE859D41960421800B71FDA /* CJAArrayDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAArrayDatasource.m; sourceTree = "<group>"; };
-		FAE859D51960421800B71FDA /* CJATableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJATableViewDatasource.h; sourceTree = "<group>"; };
-		FAE859D61960421800B71FDA /* CJATableViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJATableViewDatasource.m; sourceTree = "<group>"; };
-		FAE859D71960421800B71FDA /* CJAFetchedResultControllerDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAFetchedResultControllerDatasource.h; sourceTree = "<group>"; };
-		FAE859D81960421800B71FDA /* CJAFetchedResultControllerDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAFetchedResultControllerDatasource.m; sourceTree = "<group>"; };
-		FAE859DD1960490C00B71FDA /* CJADataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJADataSource.h; sourceTree = "<group>"; };
-		FAF7A83219603F280037E2CD /* CJADataSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJADataSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAF7A83519603F280037E2CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FAF7A83719603F280037E2CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FAF7A83919603F280037E2CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FAF7A85619603F280037E2CD /* CJADataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJADataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAF7A85719603F280037E2CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		FAF7A82F19603F280037E2CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAF7A83819603F280037E2CD /* CoreGraphics.framework in Frameworks */,
-				FAF7A83A19603F280037E2CD /* UIKit.framework in Frameworks */,
-				FAF7A83619603F280037E2CD /* Foundation.framework in Frameworks */,
-				30D863F608934575A6C3A9A4 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAF7A85319603F280037E2CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAF7A85819603F280037E2CD /* XCTest.framework in Frameworks */,
-				FAF7A85A19603F290037E2CD /* UIKit.framework in Frameworks */,
-				FAF7A85919603F290037E2CD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		65036F241962F08600F46CBB /* GUI */ = {
-			isa = PBXGroup;
-			children = (
-				FA9F9E0F199D16AC00509839 /* PageViewController */,
-				6531F777198C24690082B798 /* Common */,
-				6531F772198C1BCE0082B798 /* FetchedResultsController */,
-				65036F251962F08600F46CBB /* Array */,
-				65036F2E1962F57E00F46CBB /* MutableArray */,
-				65036F2A1962F13100F46CBB /* TabBar */,
-			);
-			name = GUI;
-			path = Example/Classes/GUI;
-			sourceTree = "<group>";
-		};
-		65036F251962F08600F46CBB /* Array */ = {
-			isa = PBXGroup;
-			children = (
-				65036F261962F08600F46CBB /* CJABaseTableViewController.h */,
-				65036F271962F08600F46CBB /* CJABaseTableViewController.m */,
-			);
-			path = Array;
-			sourceTree = "<group>";
-		};
-		65036F2A1962F13100F46CBB /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				65036F2B1962F15600F46CBB /* CJATabBarController.h */,
-				65036F2C1962F15600F46CBB /* CJATabBarController.m */,
-			);
-			name = TabBar;
-			sourceTree = "<group>";
-		};
-		65036F2E1962F57E00F46CBB /* MutableArray */ = {
-			isa = PBXGroup;
-			children = (
-				657BE9E9196444EC00A826EA /* Views */,
-				65036F32196303AD00F46CBB /* ViewController */,
-			);
-			name = MutableArray;
-			sourceTree = "<group>";
-		};
-		65036F32196303AD00F46CBB /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				65036F33196303AD00F46CBB /* CJAMutableArrayTableViewController.h */,
-				65036F34196303AD00F46CBB /* CJAMutableArrayTableViewController.m */,
-			);
-			name = ViewController;
-			path = MutableArray/ViewController;
-			sourceTree = "<group>";
-		};
-		6531F73E198C0E060082B798 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6531F742198C13260082B798 /* _CJACar.h */,
-				6531F743198C13260082B798 /* _CJACar.m */,
-				6531F744198C13260082B798 /* _CJADriver.h */,
-				6531F745198C13260082B798 /* _CJADriver.m */,
-				6531F746198C13260082B798 /* CJACar.h */,
-				6531F747198C13260082B798 /* CJACar.m */,
-				6531F748198C13260082B798 /* CJADriver.h */,
-				6531F749198C13260082B798 /* CJADriver.m */,
-				6531F73F198C0E570082B798 /* CJADatasource.xcdatamodeld */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		6531F762198C15B40082B798 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				6531F763198C15EF0082B798 /* Starters */,
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		6531F763198C15EF0082B798 /* Starters */ = {
-			isa = PBXGroup;
-			children = (
-				6531F76B198C16AF0082B798 /* CoreData */,
-				6531F764198C16090082B798 /* Factory */,
-			);
-			name = Starters;
-			sourceTree = "<group>";
-		};
-		6531F764198C16090082B798 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				6531F768198C163E0082B798 /* CJAStarterFactory.h */,
-				6531F769198C163E0082B798 /* CJAStarterFactory.m */,
-			);
-			name = Factory;
-			sourceTree = "<group>";
-		};
-		6531F76B198C16AF0082B798 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				6531F76C198C16C50082B798 /* CJACoreDataStarter.h */,
-				6531F76D198C16C50082B798 /* CJACoreDataStarter.m */,
-				6531F76F198C17240082B798 /* CJACoreDataInitializer.h */,
-				6531F770198C17240082B798 /* CJACoreDataInitializer.m */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
-		6531F772198C1BCE0082B798 /* FetchedResultsController */ = {
-			isa = PBXGroup;
-			children = (
-				6531F77C198C257D0082B798 /* Views */,
-				6531F773198C1C040082B798 /* ViewController */,
-			);
-			name = FetchedResultsController;
-			sourceTree = "<group>";
-		};
-		6531F773198C1C040082B798 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6531F774198C1C490082B798 /* CJAFetchedResultsTableViewController.h */,
-				6531F775198C1C490082B798 /* CJAFetchedResultsTableViewController.m */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		6531F777198C24690082B798 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				6531F778198C246C0082B798 /* Views */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		6531F778198C246C0082B798 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				6531F779198C24AF0082B798 /* CJABaseTableHeaderFooterView.h */,
-				6531F77A198C24AF0082B798 /* CJABaseTableHeaderFooterView.m */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		6531F77C198C257D0082B798 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				6531F77D198C25840082B798 /* SectionHeaderView */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		6531F77D198C25840082B798 /* SectionHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				6531F77E198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.h */,
-				6531F77F198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m */,
-			);
-			name = SectionHeaderView;
-			sourceTree = "<group>";
-		};
-		657BE9E9196444EC00A826EA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				657BE9EA196444F800A826EA /* SectionHeaderView */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		657BE9EA196444F800A826EA /* SectionHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				657BE9EB1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.h */,
-				657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */,
-			);
-			name = SectionHeaderView;
-			sourceTree = "<group>";
-		};
-		FA3FC09D1965B69D00A9DF00 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				FA3FC09E1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.h */,
-				FA3FC09F1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.m */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		FA9F9E0F199D16AC00509839 /* PageViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FA9F9E10199D16CD00509839 /* CJAPageViewController.h */,
-				FA9F9E11199D16CD00509839 /* CJAPageViewController.m */,
-				FA9F9E13199D170000509839 /* CJAPagedIndexViewController.h */,
-				FA9F9E14199D170000509839 /* CJAPagedIndexViewController.m */,
-			);
-			name = PageViewController;
-			sourceTree = "<group>";
-		};
-		FAE859BF196040CA00B71FDA /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				FAE859C0196040D800B71FDA /* Classes */,
-				FAE859C2196040E200B71FDA /* Other Sources */,
-				FAE859C1196040DD00B71FDA /* Resources */,
-			);
-			name = Example;
-			sourceTree = "<group>";
-		};
-		FAE859C0196040D800B71FDA /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				6531F762198C15B40082B798 /* Helpers */,
-				6531F73E198C0E060082B798 /* Model */,
-				65036F241962F08600F46CBB /* GUI */,
-				FAE859C31960413300B71FDA /* CJAAppDelegate.h */,
-				FAE859C41960413300B71FDA /* CJAAppDelegate.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		FAE859C1196040DD00B71FDA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FAE859CE1960414200B71FDA /* Images.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		FAE859C2196040E200B71FDA /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				FAE859C91960413B00B71FDA /* CJADataSource-Info.plist */,
-				FAE859CA1960413B00B71FDA /* CJADataSource-Prefix.pch */,
-				FAE859CB1960413B00B71FDA /* main.m */,
-			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		FAF7A82919603F280037E2CD = {
-			isa = PBXGroup;
-			children = (
-				54736B2519C861D900320826 /* CJADataSource.podspec */,
-				FAF7A83B19603F280037E2CD /* CJADataSource */,
-				FAE859BF196040CA00B71FDA /* Example */,
-				FAF7A85D19603F290037E2CD /* CJADataSourceTests */,
-				FAF7A83419603F280037E2CD /* Frameworks */,
-				FAF7A83319603F280037E2CD /* Products */,
-				8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		FAF7A83319603F280037E2CD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FAF7A83219603F280037E2CD /* CJADataSource.app */,
-				FAF7A85619603F280037E2CD /* CJADataSourceTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FAF7A83419603F280037E2CD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FAF7A83519603F280037E2CD /* Foundation.framework */,
-				FAF7A83719603F280037E2CD /* CoreGraphics.framework */,
-				FAF7A83919603F280037E2CD /* UIKit.framework */,
-				FAF7A85719603F280037E2CD /* XCTest.framework */,
-				281DA597325E4191B36D0C51 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FAF7A83B19603F280037E2CD /* CJADataSource */ = {
-			isa = PBXGroup;
-			children = (
-				FAE859DD1960490C00B71FDA /* CJADataSource.h */,
-				FAE859D51960421800B71FDA /* CJATableViewDatasource.h */,
-				FAE859D61960421800B71FDA /* CJATableViewDatasource.m */,
-				FAE859D31960421800B71FDA /* CJAArrayDatasource.h */,
-				FAE859D41960421800B71FDA /* CJAArrayDatasource.m */,
-				65036F1E1962828C00F46CBB /* CJAMutableArrayDatasource.h */,
-				65036F1F1962828C00F46CBB /* CJAMutableArrayDatasource.m */,
-				FAE859D71960421800B71FDA /* CJAFetchedResultControllerDatasource.h */,
-				FAE859D81960421800B71FDA /* CJAFetchedResultControllerDatasource.m */,
-				65036F21196292A100F46CBB /* NSMutableArray+CJADataSource.h */,
-				65036F22196292A100F46CBB /* NSMutableArray+CJADataSource.m */,
-				FA9F9E0C199D155000509839 /* CJAPageViewControllerDatasource.h */,
-				FA9F9E0D199D155000509839 /* CJAPageViewControllerDatasource.m */,
-			);
-			path = CJADataSource;
-			sourceTree = "<group>";
-		};
-		FAF7A85D19603F290037E2CD /* CJADataSourceTests */ = {
-			isa = PBXGroup;
-			children = (
-				FA3FC09D1965B69D00A9DF00 /* Base */,
-				FA3FC0A219667A5500A9DF00 /* CJATableViewTestCase.m */,
-				FADE3117196D4BD6009E3389 /* CJAArrayDataSourceTestCase.m */,
-				FAF7A85E19603F290037E2CD /* Supporting Files */,
-			);
-			path = CJADataSourceTests;
-			sourceTree = "<group>";
-		};
-		FAF7A85E19603F290037E2CD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAE859D01960418900B71FDA /* CJADataSourceTests-Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		FAF7A83119603F280037E2CD /* CJADataSource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAF7A86719603F290037E2CD /* Build configuration list for PBXNativeTarget "CJADataSource" */;
-			buildPhases = (
-				1E3A6032F2714E5F98D28FB8 /* Check Pods Manifest.lock */,
-				FAF7A82E19603F280037E2CD /* Sources */,
-				FAF7A82F19603F280037E2CD /* Frameworks */,
-				FAF7A83019603F280037E2CD /* Resources */,
-				AF2948AA456B4FC5BC90E415 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CJADataSource;
-			productName = CJADataSource;
-			productReference = FAF7A83219603F280037E2CD /* CJADataSource.app */;
-			productType = "com.apple.product-type.application";
-		};
-		FAF7A85519603F280037E2CD /* CJADataSourceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAF7A86A19603F290037E2CD /* Build configuration list for PBXNativeTarget "CJADataSourceTests" */;
-			buildPhases = (
-				FAF7A85219603F280037E2CD /* Sources */,
-				FAF7A85319603F280037E2CD /* Frameworks */,
-				FAF7A85419603F280037E2CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAF7A85C19603F290037E2CD /* PBXTargetDependency */,
-				FAE859BC1960409B00B71FDA /* PBXTargetDependency */,
-				FAE859BE1960409C00B71FDA /* PBXTargetDependency */,
-			);
-			name = CJADataSourceTests;
-			productName = CJADataSourceTests;
-			productReference = FAF7A85619603F280037E2CD /* CJADataSourceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		FAF7A82A19603F280037E2CD /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = CJA;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Carl Jahn";
-				TargetAttributes = {
-					FAF7A85519603F280037E2CD = {
-						TestTargetID = FAF7A83119603F280037E2CD;
-					};
-				};
-			};
-			buildConfigurationList = FAF7A82D19603F280037E2CD /* Build configuration list for PBXProject "CJADataSource" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = FAF7A82919603F280037E2CD;
-			productRefGroup = FAF7A83319603F280037E2CD /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				FAF7A83119603F280037E2CD /* CJADataSource */,
-				FAF7A85519603F280037E2CD /* CJADataSourceTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		FAF7A83019603F280037E2CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAE859CF1960414200B71FDA /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAF7A85419603F280037E2CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1E3A6032F2714E5F98D28FB8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AF2948AA456B4FC5BC90E415 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		FAF7A82E19603F280037E2CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6531F74D198C13260082B798 /* CJADriver.m in Sources */,
-				6531F74C198C13260082B798 /* CJACar.m in Sources */,
-				FAE859D91960421800B71FDA /* CJAArrayDatasource.m in Sources */,
-				FAE859DB1960421800B71FDA /* CJAFetchedResultControllerDatasource.m in Sources */,
-				FA9F9E12199D16CD00509839 /* CJAPageViewController.m in Sources */,
-				FAE859C71960413300B71FDA /* CJAAppDelegate.m in Sources */,
-				FAE859DA1960421800B71FDA /* CJATableViewDatasource.m in Sources */,
-				6531F780198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m in Sources */,
-				6531F74B198C13260082B798 /* _CJADriver.m in Sources */,
-				6531F76E198C16C50082B798 /* CJACoreDataStarter.m in Sources */,
-				FAE859CD1960413B00B71FDA /* main.m in Sources */,
-				65036F201962828C00F46CBB /* CJAMutableArrayDatasource.m in Sources */,
-				65036F2D1962F15600F46CBB /* CJATabBarController.m in Sources */,
-				6531F741198C0E570082B798 /* CJADatasource.xcdatamodeld in Sources */,
-				65036F35196303AD00F46CBB /* CJAMutableArrayTableViewController.m in Sources */,
-				65036F23196292A100F46CBB /* NSMutableArray+CJADataSource.m in Sources */,
-				65036F291962F08600F46CBB /* CJABaseTableViewController.m in Sources */,
-				6531F776198C1C490082B798 /* CJAFetchedResultsTableViewController.m in Sources */,
-				6531F771198C17240082B798 /* CJACoreDataInitializer.m in Sources */,
-				FA9F9E0E199D155000509839 /* CJAPageViewControllerDatasource.m in Sources */,
-				657BE9ED1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m in Sources */,
-				6531F77B198C24AF0082B798 /* CJABaseTableHeaderFooterView.m in Sources */,
-				FA9F9E15199D170000509839 /* CJAPagedIndexViewController.m in Sources */,
-				6531F74A198C13260082B798 /* _CJACar.m in Sources */,
-				6531F76A198C163E0082B798 /* CJAStarterFactory.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAF7A85219603F280037E2CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA3FC0A11965B6F600A9DF00 /* CJATestCaseThatNeedsATableView.m in Sources */,
-				FA3FC0A319667A5500A9DF00 /* CJATableViewTestCase.m in Sources */,
-				FADE3118196D4BD6009E3389 /* CJAArrayDataSourceTestCase.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FAE859BC1960409B00B71FDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAF7A83119603F280037E2CD /* CJADataSource */;
-			targetProxy = FAE859BB1960409B00B71FDA /* PBXContainerItemProxy */;
-		};
-		FAE859BE1960409C00B71FDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAF7A83119603F280037E2CD /* CJADataSource */;
-			targetProxy = FAE859BD1960409C00B71FDA /* PBXContainerItemProxy */;
-		};
-		FAF7A85C19603F290037E2CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAF7A83119603F280037E2CD /* CJADataSource */;
-			targetProxy = FAF7A85B19603F290037E2CD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		FAF7A86519603F290037E2CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FAF7A86619603F290037E2CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FAF7A86819603F290037E2CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/Other Sources/CJADataSource-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Example/Other Sources/CJADataSource-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		FAF7A86919603F290037E2CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/Other Sources/CJADataSource-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Example/Other Sources/CJADataSource-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		FAF7A86B19603F290037E2CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/Other Sources/CJADataSource-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Tests/CJADataSourceTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		FAF7A86C19603F290037E2CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/Other Sources/CJADataSource-Prefix.pch";
-				INFOPLIST_FILE = "Tests/CJADataSourceTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		FAF7A82D19603F280037E2CD /* Build configuration list for PBXProject "CJADataSource" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAF7A86519603F290037E2CD /* Debug */,
-				FAF7A86619603F290037E2CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAF7A86719603F290037E2CD /* Build configuration list for PBXNativeTarget "CJADataSource" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAF7A86819603F290037E2CD /* Debug */,
-				FAF7A86919603F290037E2CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAF7A86A19603F290037E2CD /* Build configuration list for PBXNativeTarget "CJADataSourceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAF7A86B19603F290037E2CD /* Debug */,
-				FAF7A86C19603F290037E2CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6531F73F198C0E570082B798 /* CJADatasource.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6531F740198C0E570082B798 /* CJADatasource.xcdatamodel */,
-			);
-			currentVersion = 6531F740198C0E570082B798 /* CJADatasource.xcdatamodel */;
-			name = CJADatasource.xcdatamodeld;
-			path = Example/Classes/Model/CJADatasource.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = FAF7A82A19603F280037E2CD /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>072EACDB66899F99E102DBB6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08296A6ACC6791945EED7C22</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4994E9926F12A84FB1D244D3</string>
+				<string>072EACDB66899F99E102DBB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1E3A6032F2714E5F98D28FB8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>281DA597325E4191B36D0C51</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>30D863F608934575A6C3A9A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>281DA597325E4191B36D0C51</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4994E9926F12A84FB1D244D3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54736B2519C861D900320826</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>CJADataSource.podspec</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F1E1962828C00F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CJAMutableArrayDatasource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F1F1962828C00F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CJAMutableArrayDatasource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F201962828C00F46CBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65036F1F1962828C00F46CBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>65036F21196292A100F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSMutableArray+CJADataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F22196292A100F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSMutableArray+CJADataSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F23196292A100F46CBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65036F22196292A100F46CBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>65036F241962F08600F46CBB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA9F9E0F199D16AC00509839</string>
+				<string>6531F777198C24690082B798</string>
+				<string>6531F772198C1BCE0082B798</string>
+				<string>65036F251962F08600F46CBB</string>
+				<string>65036F2E1962F57E00F46CBB</string>
+				<string>65036F2A1962F13100F46CBB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GUI</string>
+			<key>path</key>
+			<string>Example/Classes/GUI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F251962F08600F46CBB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>65036F261962F08600F46CBB</string>
+				<string>65036F271962F08600F46CBB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Array</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F261962F08600F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CJABaseTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F271962F08600F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CJABaseTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F291962F08600F46CBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65036F271962F08600F46CBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>65036F2A1962F13100F46CBB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>65036F2B1962F15600F46CBB</string>
+				<string>65036F2C1962F15600F46CBB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TabBar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F2B1962F15600F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJATabBarController.h</string>
+			<key>path</key>
+			<string>TabBar/CJATabBarController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F2C1962F15600F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJATabBarController.m</string>
+			<key>path</key>
+			<string>TabBar/CJATabBarController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F2D1962F15600F46CBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65036F2C1962F15600F46CBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>65036F2E1962F57E00F46CBB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>657BE9E9196444EC00A826EA</string>
+				<string>65036F32196303AD00F46CBB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MutableArray</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F32196303AD00F46CBB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>65036F33196303AD00F46CBB</string>
+				<string>65036F34196303AD00F46CBB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ViewController</string>
+			<key>path</key>
+			<string>MutableArray/ViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F33196303AD00F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CJAMutableArrayTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F34196303AD00F46CBB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CJAMutableArrayTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65036F35196303AD00F46CBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65036F34196303AD00F46CBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F73E198C0E060082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F742198C13260082B798</string>
+				<string>6531F743198C13260082B798</string>
+				<string>6531F744198C13260082B798</string>
+				<string>6531F745198C13260082B798</string>
+				<string>6531F746198C13260082B798</string>
+				<string>6531F747198C13260082B798</string>
+				<string>6531F748198C13260082B798</string>
+				<string>6531F749198C13260082B798</string>
+				<string>6531F73F198C0E570082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F73F198C0E570082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F740198C0E570082B798</string>
+			</array>
+			<key>currentVersion</key>
+			<string>6531F740198C0E570082B798</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>name</key>
+			<string>CJADatasource.xcdatamodeld</string>
+			<key>path</key>
+			<string>Example/Classes/Model/CJADatasource.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>6531F740198C0E570082B798</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>CJADatasource.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F741198C0E570082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F73F198C0E570082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F742198C13260082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>_CJACar.h</string>
+			<key>path</key>
+			<string>Example/Classes/Model/_CJACar.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F743198C13260082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>_CJACar.m</string>
+			<key>path</key>
+			<string>Example/Classes/Model/_CJACar.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F744198C13260082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>_CJADriver.h</string>
+			<key>path</key>
+			<string>Example/Classes/Model/_CJADriver.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F745198C13260082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>_CJADriver.m</string>
+			<key>path</key>
+			<string>Example/Classes/Model/_CJADriver.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F746198C13260082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJACar.h</string>
+			<key>path</key>
+			<string>Example/Classes/Model/CJACar.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F747198C13260082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJACar.m</string>
+			<key>path</key>
+			<string>Example/Classes/Model/CJACar.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F748198C13260082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJADriver.h</string>
+			<key>path</key>
+			<string>Example/Classes/Model/CJADriver.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F749198C13260082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJADriver.m</string>
+			<key>path</key>
+			<string>Example/Classes/Model/CJADriver.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F74A198C13260082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F743198C13260082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F74B198C13260082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F745198C13260082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F74C198C13260082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F747198C13260082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F74D198C13260082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F749198C13260082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F762198C15B40082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F763198C15EF0082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Helpers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F763198C15EF0082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F76B198C16AF0082B798</string>
+				<string>6531F764198C16090082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Starters</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F764198C16090082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F768198C163E0082B798</string>
+				<string>6531F769198C163E0082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Factory</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F768198C163E0082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJAStarterFactory.h</string>
+			<key>path</key>
+			<string>Example/Classes/Helpers/Starters/Factory/CJAStarterFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F769198C163E0082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJAStarterFactory.m</string>
+			<key>path</key>
+			<string>Example/Classes/Helpers/Starters/Factory/CJAStarterFactory.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F76A198C163E0082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F769198C163E0082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F76B198C16AF0082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F76C198C16C50082B798</string>
+				<string>6531F76D198C16C50082B798</string>
+				<string>6531F76F198C17240082B798</string>
+				<string>6531F770198C17240082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CoreData</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F76C198C16C50082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJACoreDataStarter.h</string>
+			<key>path</key>
+			<string>Example/Classes/Helpers/Starters/CoreData/CJACoreDataStarter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F76D198C16C50082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJACoreDataStarter.m</string>
+			<key>path</key>
+			<string>Example/Classes/Helpers/Starters/CoreData/CJACoreDataStarter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F76E198C16C50082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F76D198C16C50082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F76F198C17240082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJACoreDataInitializer.h</string>
+			<key>path</key>
+			<string>Example/Classes/Helpers/Starters/CoreData/CJACoreDataInitializer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F770198C17240082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJACoreDataInitializer.m</string>
+			<key>path</key>
+			<string>Example/Classes/Helpers/Starters/CoreData/CJACoreDataInitializer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F771198C17240082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F770198C17240082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F772198C1BCE0082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F77C198C257D0082B798</string>
+				<string>6531F773198C1C040082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FetchedResultsController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F773198C1C040082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F774198C1C490082B798</string>
+				<string>6531F775198C1C490082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F774198C1C490082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJAFetchedResultsTableViewController.h</string>
+			<key>path</key>
+			<string>FetchedResultsController/CJAFetchedResultsTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F775198C1C490082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJAFetchedResultsTableViewController.m</string>
+			<key>path</key>
+			<string>FetchedResultsController/CJAFetchedResultsTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F776198C1C490082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F775198C1C490082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F777198C24690082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F778198C246C0082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Common</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F778198C246C0082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F779198C24AF0082B798</string>
+				<string>6531F77A198C24AF0082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F779198C24AF0082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJABaseTableHeaderFooterView.h</string>
+			<key>path</key>
+			<string>Common/Views/CJABaseTableHeaderFooterView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F77A198C24AF0082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJABaseTableHeaderFooterView.m</string>
+			<key>path</key>
+			<string>Common/Views/CJABaseTableHeaderFooterView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F77B198C24AF0082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F77A198C24AF0082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6531F77C198C257D0082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F77D198C25840082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F77D198C25840082B798</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F77E198C25D70082B798</string>
+				<string>6531F77F198C25D70082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SectionHeaderView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F77E198C25D70082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJAFetchedResultsSectionHeaderTableView.h</string>
+			<key>path</key>
+			<string>FetchedResultsController/Views/SectionHeaderView/CJAFetchedResultsSectionHeaderTableView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F77F198C25D70082B798</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJAFetchedResultsSectionHeaderTableView.m</string>
+			<key>path</key>
+			<string>FetchedResultsController/Views/SectionHeaderView/CJAFetchedResultsSectionHeaderTableView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6531F780198C25D70082B798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531F77F198C25D70082B798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>657BE9E9196444EC00A826EA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>657BE9EA196444F800A826EA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>657BE9EA196444F800A826EA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>657BE9EB1964458B00A826EA</string>
+				<string>657BE9EC1964458B00A826EA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SectionHeaderView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>657BE9EB1964458B00A826EA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJAMutableArraySectionHeaderTableView.h</string>
+			<key>path</key>
+			<string>MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>657BE9EC1964458B00A826EA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJAMutableArraySectionHeaderTableView.m</string>
+			<key>path</key>
+			<string>MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>657BE9ED1964458B00A826EA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>657BE9EC1964458B00A826EA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AF2948AA456B4FC5BC90E415</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>FA3FC09D1965B69D00A9DF00</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA3FC09E1965B6C700A9DF00</string>
+				<string>FA3FC09F1965B6C700A9DF00</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA3FC09E1965B6C700A9DF00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJATestCaseThatNeedsATableView.h</string>
+			<key>path</key>
+			<string>Tests/Base/CJATestCaseThatNeedsATableView.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FA3FC09F1965B6C700A9DF00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJATestCaseThatNeedsATableView.m</string>
+			<key>path</key>
+			<string>Tests/Base/CJATestCaseThatNeedsATableView.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FA3FC0A11965B6F600A9DF00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA3FC09F1965B6C700A9DF00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA3FC0A219667A5500A9DF00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJATableViewTestCase.m</string>
+			<key>path</key>
+			<string>Tests/CJATableViewTestCase.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FA3FC0A319667A5500A9DF00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA3FC0A219667A5500A9DF00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA9F9E0C199D155000509839</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CJAPageViewControllerDatasource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA9F9E0D199D155000509839</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CJAPageViewControllerDatasource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA9F9E0E199D155000509839</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA9F9E0D199D155000509839</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA9F9E0F199D16AC00509839</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA9F9E10199D16CD00509839</string>
+				<string>FA9F9E11199D16CD00509839</string>
+				<string>FA9F9E13199D170000509839</string>
+				<string>FA9F9E14199D170000509839</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>PageViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA9F9E10199D16CD00509839</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJAPageViewController.h</string>
+			<key>path</key>
+			<string>PageViewController/CJAPageViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA9F9E11199D16CD00509839</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJAPageViewController.m</string>
+			<key>path</key>
+			<string>PageViewController/CJAPageViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA9F9E12199D16CD00509839</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA9F9E11199D16CD00509839</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA9F9E13199D170000509839</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJAPagedIndexViewController.h</string>
+			<key>path</key>
+			<string>PageViewController/CJAPagedIndexViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA9F9E14199D170000509839</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJAPagedIndexViewController.m</string>
+			<key>path</key>
+			<string>PageViewController/CJAPagedIndexViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA9F9E15199D170000509839</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA9F9E14199D170000509839</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FADE3117196D4BD6009E3389</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJAArrayDataSourceTestCase.m</string>
+			<key>path</key>
+			<string>Tests/CJAArrayDataSourceTestCase.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FADE3118196D4BD6009E3389</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FADE3117196D4BD6009E3389</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAE859BB1960409B00B71FDA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>FAF7A82A19603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>FAF7A83119603F280037E2CD</string>
+			<key>remoteInfo</key>
+			<string>CJADataSource</string>
+		</dict>
+		<key>FAE859BC1960409B00B71FDA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>FAF7A83119603F280037E2CD</string>
+			<key>targetProxy</key>
+			<string>FAE859BB1960409B00B71FDA</string>
+		</dict>
+		<key>FAE859BD1960409C00B71FDA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>FAF7A82A19603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>FAF7A83119603F280037E2CD</string>
+			<key>remoteInfo</key>
+			<string>CJADataSource</string>
+		</dict>
+		<key>FAE859BE1960409C00B71FDA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>FAF7A83119603F280037E2CD</string>
+			<key>targetProxy</key>
+			<string>FAE859BD1960409C00B71FDA</string>
+		</dict>
+		<key>FAE859BF196040CA00B71FDA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FAE859C0196040D800B71FDA</string>
+				<string>FAE859C2196040E200B71FDA</string>
+				<string>FAE859C1196040DD00B71FDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859C0196040D800B71FDA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6531F762198C15B40082B798</string>
+				<string>6531F73E198C0E060082B798</string>
+				<string>65036F241962F08600F46CBB</string>
+				<string>FAE859C31960413300B71FDA</string>
+				<string>FAE859C41960413300B71FDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859C1196040DD00B71FDA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FAE859CE1960414200B71FDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859C2196040E200B71FDA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FAE859C91960413B00B71FDA</string>
+				<string>FAE859CA1960413B00B71FDA</string>
+				<string>FAE859CB1960413B00B71FDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Other Sources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859C31960413300B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJAAppDelegate.h</string>
+			<key>path</key>
+			<string>Example/Classes/CJAAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859C41960413300B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CJAAppDelegate.m</string>
+			<key>path</key>
+			<string>Example/Classes/CJAAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859C71960413300B71FDA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAE859C41960413300B71FDA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAE859C91960413B00B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>name</key>
+			<string>CJADataSource-Info.plist</string>
+			<key>path</key>
+			<string>Example/Other Sources/CJADataSource-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859CA1960413B00B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CJADataSource-Prefix.pch</string>
+			<key>path</key>
+			<string>Example/Other Sources/CJADataSource-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859CB1960413B00B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>main.m</string>
+			<key>path</key>
+			<string>Example/Other Sources/main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859CD1960413B00B71FDA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAE859CB1960413B00B71FDA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAE859CE1960414200B71FDA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>name</key>
+			<string>Images.xcassets</string>
+			<key>path</key>
+			<string>Example/Resources/Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859CF1960414200B71FDA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAE859CE1960414200B71FDA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAE859D01960418900B71FDA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>name</key>
+			<string>CJADataSourceTests-Info.plist</string>
+			<key>path</key>
+			<string>Tests/CJADataSourceTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FAE859D31960421800B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CJAArrayDatasource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859D41960421800B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CJAArrayDatasource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859D51960421800B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CJATableViewDatasource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859D61960421800B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CJATableViewDatasource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859D71960421800B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CJAFetchedResultControllerDatasource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859D81960421800B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CJAFetchedResultControllerDatasource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE859D91960421800B71FDA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAE859D41960421800B71FDA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAE859DA1960421800B71FDA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAE859D61960421800B71FDA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAE859DB1960421800B71FDA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAE859D81960421800B71FDA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAE859DD1960490C00B71FDA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CJADataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAF7A82919603F280037E2CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>54736B2519C861D900320826</string>
+				<string>FAF7A83B19603F280037E2CD</string>
+				<string>FAE859BF196040CA00B71FDA</string>
+				<string>FAF7A85D19603F290037E2CD</string>
+				<string>FAF7A83419603F280037E2CD</string>
+				<string>FAF7A83319603F280037E2CD</string>
+				<string>08296A6ACC6791945EED7C22</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAF7A82A19603F280037E2CD</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>CJA</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Carl Jahn</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>FAF7A85519603F280037E2CD</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>FAF7A83119603F280037E2CD</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>FAF7A82D19603F280037E2CD</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>FAF7A82919603F280037E2CD</string>
+			<key>productRefGroup</key>
+			<string>FAF7A83319603F280037E2CD</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>FAF7A83119603F280037E2CD</string>
+				<string>FAF7A85519603F280037E2CD</string>
+			</array>
+		</dict>
+		<key>FAF7A82D19603F280037E2CD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FAF7A86519603F290037E2CD</string>
+				<string>FAF7A86619603F290037E2CD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FAF7A82E19603F280037E2CD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6531F74D198C13260082B798</string>
+				<string>6531F74C198C13260082B798</string>
+				<string>FAE859D91960421800B71FDA</string>
+				<string>FAE859DB1960421800B71FDA</string>
+				<string>FA9F9E12199D16CD00509839</string>
+				<string>FAE859C71960413300B71FDA</string>
+				<string>FAE859DA1960421800B71FDA</string>
+				<string>6531F780198C25D70082B798</string>
+				<string>6531F74B198C13260082B798</string>
+				<string>6531F76E198C16C50082B798</string>
+				<string>FAE859CD1960413B00B71FDA</string>
+				<string>65036F201962828C00F46CBB</string>
+				<string>65036F2D1962F15600F46CBB</string>
+				<string>6531F741198C0E570082B798</string>
+				<string>65036F35196303AD00F46CBB</string>
+				<string>65036F23196292A100F46CBB</string>
+				<string>65036F291962F08600F46CBB</string>
+				<string>6531F776198C1C490082B798</string>
+				<string>6531F771198C17240082B798</string>
+				<string>FA9F9E0E199D155000509839</string>
+				<string>657BE9ED1964458B00A826EA</string>
+				<string>6531F77B198C24AF0082B798</string>
+				<string>FA9F9E15199D170000509839</string>
+				<string>6531F74A198C13260082B798</string>
+				<string>6531F76A198C163E0082B798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FAF7A82F19603F280037E2CD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FAF7A83819603F280037E2CD</string>
+				<string>FAF7A83A19603F280037E2CD</string>
+				<string>FAF7A83619603F280037E2CD</string>
+				<string>30D863F608934575A6C3A9A4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FAF7A83019603F280037E2CD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FAE859CF1960414200B71FDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FAF7A83119603F280037E2CD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FAF7A86719603F290037E2CD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1E3A6032F2714E5F98D28FB8</string>
+				<string>FAF7A82E19603F280037E2CD</string>
+				<string>FAF7A82F19603F280037E2CD</string>
+				<string>FAF7A83019603F280037E2CD</string>
+				<string>AF2948AA456B4FC5BC90E415</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CJADataSource</string>
+			<key>productName</key>
+			<string>CJADataSource</string>
+			<key>productReference</key>
+			<string>FAF7A83219603F280037E2CD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>FAF7A83219603F280037E2CD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CJADataSource.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FAF7A83319603F280037E2CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FAF7A83219603F280037E2CD</string>
+				<string>FAF7A85619603F280037E2CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAF7A83419603F280037E2CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FAF7A83519603F280037E2CD</string>
+				<string>FAF7A83719603F280037E2CD</string>
+				<string>FAF7A83919603F280037E2CD</string>
+				<string>FAF7A85719603F280037E2CD</string>
+				<string>281DA597325E4191B36D0C51</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAF7A83519603F280037E2CD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FAF7A83619603F280037E2CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAF7A83519603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAF7A83719603F280037E2CD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FAF7A83819603F280037E2CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAF7A83719603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAF7A83919603F280037E2CD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FAF7A83A19603F280037E2CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAF7A83919603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAF7A83B19603F280037E2CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FAE859DD1960490C00B71FDA</string>
+				<string>FAE859D51960421800B71FDA</string>
+				<string>FAE859D61960421800B71FDA</string>
+				<string>FAE859D31960421800B71FDA</string>
+				<string>FAE859D41960421800B71FDA</string>
+				<string>65036F1E1962828C00F46CBB</string>
+				<string>65036F1F1962828C00F46CBB</string>
+				<string>FAE859D71960421800B71FDA</string>
+				<string>FAE859D81960421800B71FDA</string>
+				<string>65036F21196292A100F46CBB</string>
+				<string>65036F22196292A100F46CBB</string>
+				<string>FA9F9E0C199D155000509839</string>
+				<string>FA9F9E0D199D155000509839</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CJADataSource</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAF7A85219603F280037E2CD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA3FC0A11965B6F600A9DF00</string>
+				<string>FA3FC0A319667A5500A9DF00</string>
+				<string>FADE3118196D4BD6009E3389</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FAF7A85319603F280037E2CD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FAF7A85819603F280037E2CD</string>
+				<string>FAF7A85A19603F290037E2CD</string>
+				<string>FAF7A85919603F290037E2CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FAF7A85419603F280037E2CD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FAF7A85519603F280037E2CD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FAF7A86A19603F290037E2CD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>FAF7A85219603F280037E2CD</string>
+				<string>FAF7A85319603F280037E2CD</string>
+				<string>FAF7A85419603F280037E2CD</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>FAF7A85C19603F290037E2CD</string>
+				<string>FAE859BC1960409B00B71FDA</string>
+				<string>FAE859BE1960409C00B71FDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CJADataSourceTests</string>
+			<key>productName</key>
+			<string>CJADataSourceTests</string>
+			<key>productReference</key>
+			<string>FAF7A85619603F280037E2CD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>FAF7A85619603F280037E2CD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CJADataSourceTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FAF7A85719603F280037E2CD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>FAF7A85819603F280037E2CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAF7A85719603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAF7A85919603F290037E2CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAF7A83519603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAF7A85A19603F290037E2CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAF7A83919603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAF7A85B19603F290037E2CD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>FAF7A82A19603F280037E2CD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>FAF7A83119603F280037E2CD</string>
+			<key>remoteInfo</key>
+			<string>CJADataSource</string>
+		</dict>
+		<key>FAF7A85C19603F290037E2CD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>FAF7A83119603F280037E2CD</string>
+			<key>targetProxy</key>
+			<string>FAF7A85B19603F290037E2CD</string>
+		</dict>
+		<key>FAF7A85D19603F290037E2CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA3FC09D1965B69D00A9DF00</string>
+				<string>FA3FC0A219667A5500A9DF00</string>
+				<string>FADE3117196D4BD6009E3389</string>
+				<string>FAF7A85E19603F290037E2CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CJADataSourceTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAF7A85E19603F290037E2CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FAE859D01960418900B71FDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAF7A86519603F290037E2CD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FAF7A86619603F290037E2CD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FAF7A86719603F290037E2CD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FAF7A86819603F290037E2CD</string>
+				<string>FAF7A86919603F290037E2CD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FAF7A86819603F290037E2CD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4994E9926F12A84FB1D244D3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Example/Other Sources/CJADataSource-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>$(SRCROOT)/Example/Other Sources/CJADataSource-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FAF7A86919603F290037E2CD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>072EACDB66899F99E102DBB6</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Example/Other Sources/CJADataSource-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>$(SRCROOT)/Example/Other Sources/CJADataSource-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FAF7A86A19603F290037E2CD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FAF7A86B19603F290037E2CD</string>
+				<string>FAF7A86C19603F290037E2CD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FAF7A86B19603F290037E2CD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Example/Other Sources/CJADataSource-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/CJADataSourceTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FAF7A86C19603F290037E2CD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Example/Other Sources/CJADataSource-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/CJADataSourceTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>FAF7A82A19603F280037E2CD</string>
+</dict>
+</plist>
