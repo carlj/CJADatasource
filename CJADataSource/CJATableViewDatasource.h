@@ -12,7 +12,7 @@ typedef void(^CJADataSourceConfigureCellBlock)(UITableView *tableView, NSIndexPa
 typedef NSString *(^CJADataSourceCellIdentifierBlock)(UITableView *tableView, NSIndexPath *indexPath);
 typedef id(^CJADataSourceObjectBlock)(UITableView *tableView, NSIndexPath *indexPath);
 
-typedef CGFloat(^CJADataCellHightBlock)(UITableView *tableView, id object);
+typedef CGFloat(^CJADataCellHeightBlock)(UITableView *tableView, id object);
 typedef void(^CJADataObjectClickedBlock)(UITableView *tableView, NSIndexPath *indexPath, id object);
 
 // Header footer blocks
@@ -33,7 +33,7 @@ typedef CGFloat(^CJADataSourceHeaderFooterHeight)(UITableView *tableView, NSUInt
 @property (nonatomic, copy) CJADataSourceCellIdentifierBlock cellIdentifierBlock;
 @property (nonatomic, copy) CJADataSourceObjectBlock objectBlock;
 
-@property (nonatomic, copy) CJADataCellHightBlock cellHightBlock;
+@property (nonatomic, copy) CJADataCellHeightBlock cellHightBlock;
 @property (nonatomic, copy) CJADataObjectClickedBlock cellClickedBlock;
 
 // Header footer blocks
