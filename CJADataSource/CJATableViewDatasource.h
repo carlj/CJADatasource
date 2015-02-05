@@ -12,13 +12,13 @@ typedef void(^CJADataSourceConfigureCellBlock)(UITableView *tableView, NSIndexPa
 typedef NSString *(^CJADataSourceCellIdentifierBlock)(UITableView *tableView, NSIndexPath *indexPath);
 typedef id(^CJADataSourceObjectBlock)(UITableView *tableView, NSIndexPath *indexPath);
 
-typedef float(^CJADataCellHightBlock)(UITableView *tableView, id object);
+typedef CGFloat(^CJADataCellHightBlock)(UITableView *tableView, id object);
 typedef void(^CJADataObjectClickedBlock)(UITableView *tableView, NSIndexPath *indexPath, id object);
 
 // Header footer blocks
 typedef void(^CJADataSourceConfigureSectionHeaderFooterBlock)(UITableView *tableView, NSUInteger section, id view);
 typedef NSString *(^CJADataSourceHeaderFooterIdentifierBlock)(UITableView *tableView, NSUInteger section);
-typedef float(^CJADataSourceHeaderFooterHeight)(UITableView *tableView, NSUInteger section);
+typedef CGFloat(^CJADataSourceHeaderFooterHeight)(UITableView *tableView, NSUInteger section);
 
 @interface CJATableViewDatasource : NSObject<UITableViewDataSource, UITableViewDelegate>
 

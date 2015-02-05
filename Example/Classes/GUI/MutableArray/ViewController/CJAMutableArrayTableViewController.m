@@ -61,7 +61,7 @@
         };
 
         
-        _tableDatasource.sectionHeaderHeightBlock = ^(UITableView *tableView, NSUInteger section) {
+        _tableDatasource.sectionHeaderHeightBlock = ^CGFloat(UITableView *tableView, NSUInteger section) {
             
             return 30.0f;
         };

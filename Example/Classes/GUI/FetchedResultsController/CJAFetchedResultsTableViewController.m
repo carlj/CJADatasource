@@ -76,7 +76,7 @@
         Class headerFooterClass = [CJAFetchedResultsSectionHeaderTableView class];
         NSString *sectionHeaderFooterID = NSStringFromClass(headerFooterClass);
         _tableDatasource.headerFooterIdentifiersAndClassesDictionary = @{sectionHeaderFooterID : headerFooterClass};
-        _tableDatasource.sectionHeaderHeightBlock = ^(UITableView *tableView, NSUInteger section) {
+        _tableDatasource.sectionHeaderHeightBlock = ^CGFloat(UITableView *tableView, NSUInteger section) {
             
             return 30.0f;
         };
