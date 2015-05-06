@@ -21,7 +21,7 @@ typedef void(^CJAPageViewControllerDatasourceAnimationCompletionBlock)(BOOL comp
 typedef void(^CJAPageViewControllerDatasourceChangedCurrentIndexBlock)(NSUInteger newIndex);
 typedef UIPageViewControllerNavigationDirection(^CJAPageViewControllerDatasourcePageAnimationBlock)(NSUInteger newIndex);
 
-typedef UIViewController<CJAPageViewControllerIndexedProtocol> *(^CJAPageViewControllerDatasourceControllerBlock)(UIPageViewController *pageViewController, NSUInteger index );
+typedef UIViewController *(^CJAPageViewControllerDatasourceControllerBlock)(UIPageViewController *pageViewController, NSUInteger index );
 
 @interface CJAPageViewControllerDatasource : NSObject<UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 

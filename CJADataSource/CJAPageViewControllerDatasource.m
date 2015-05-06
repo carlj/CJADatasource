@@ -16,6 +16,8 @@
 
 @property (nonatomic, assign, getter = isinTransition) BOOL inTransition;
 
+@property (nonatomic, strong) NSMutableDictionary *cachedIndexes;
+
 @end
 
 @implementation CJAPageViewControllerDatasource
@@ -27,6 +29,7 @@
     if (self) {
         self.pageViewController = pageViewController;
         self.currentIndex = 0;
+        self.cachedIndexes = [@{} mutableCopy];
     }
     
     return self;
@@ -59,38 +62,51 @@
       viewControllerBeforeViewController:(UIViewController *)viewController {
     
     NSUInteger newIndex = self.currentIndex;
-    if ([viewController conformsToProtocol:@protocol(CJAPageViewControllerIndexedProtocol)]) {
-        
-        id<CJAPageViewControllerIndexedProtocol> indexedViewController = (id<CJAPageViewControllerIndexedProtocol>)viewController;
-        newIndex = indexedViewController.index - 1;
+    if (!newIndex) {
+        return nil;
     }
     
-    return [self viewControllerForIndex:newIndex];
+    newIndex -= 1;
+    
+    UIViewController *newViewController = [self viewControllerForIndex:newIndex];
+    NSString *hashKey = [[self class] hashKeyForObject:newViewController];
+    
+    self.cachedIndexes[hashKey] = @(newIndex);
+    
+    return newViewController;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
        viewControllerAfterViewController:(UIViewController *)viewController {
     
     NSUInteger newIndex = self.currentIndex;
-    if ([viewController conformsToProtocol:@protocol(CJAPageViewControllerIndexedProtocol)]) {
-        
-        id<CJAPageViewControllerIndexedProtocol> indexedViewController = (id<CJAPageViewControllerIndexedProtocol>)viewController;
-        newIndex = indexedViewController.index + 1;
-    }
     
-    return [self viewControllerForIndex: newIndex];
+    newIndex += 1;
+    
+    UIViewController *newViewController = [self viewControllerForIndex:newIndex];
+    NSString *hashKey = [[self class] hashKeyForObject:newViewController];
+    
+    self.cachedIndexes[hashKey] = @(newIndex);
+    
+    return newViewController;
+
+}
+
+- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
+
+    NSString *hashKey = [[self class] hashKeyForObject:pageViewController];
+    return [self.cachedIndexes[hashKey] integerValue];
 }
 
 #pragma mark - UIPageViewController Delegate Methods
 - (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers {
+
+    NSString *hashKey = [[self class] hashKeyForObject:pendingViewControllers.firstObject];
+    NSNumber *newIndex = self.cachedIndexes[hashKey];
     
-    if ([pendingViewControllers.firstObject conformsToProtocol:@protocol(CJAPageViewControllerIndexedProtocol)]) {
-        
-        id<CJAPageViewControllerIndexedProtocol> indexedViewController = (id<CJAPageViewControllerIndexedProtocol>)pendingViewControllers.firstObject;
-        self.currentIndex = [indexedViewController index];
-        
+    if (newIndex) {
+        self.currentIndex = newIndex.integerValue;
     }
-    
 }
 
 - (BOOL)showNextViewControllerAnimated:(BOOL)animated completed:(CJAPageViewControllerDatasourceAnimationCompletionBlock)completed {
@@ -187,10 +203,10 @@
     
 }
 
-- (UIViewController<CJAPageViewControllerIndexedProtocol> *)viewControllerForIndex:(NSUInteger)index {
+- (UIViewController *)viewControllerForIndex:(NSUInteger)index {
     NSParameterAssert(index >= 0);
     
-    UIViewController<CJAPageViewControllerIndexedProtocol> *newViewController = nil;
+    UIViewController *newViewController = nil;
     if (self.viewControllerBlock) {
         
         newViewController = self.viewControllerBlock(self.pageViewController, index);
@@ -198,10 +214,22 @@
     }
     
     if ([newViewController conformsToProtocol:@protocol(CJAPageViewControllerIndexedProtocol) ]) {
-        newViewController.index = index;
+        
+        id<CJAPageViewControllerIndexedProtocol> pageViewController = (id<CJAPageViewControllerIndexedProtocol>)newViewController;
+        pageViewController.index = index;
     }
     
     return newViewController;
+}
+
+#pragma mark - Helper
++ (NSString *)hashKeyForObject:(NSObject *)object {
+    
+    if (!object) {
+        return @"";
+    }
+    
+    return [NSString stringWithFormat:@"%@", @(object.hash)];
 }
 
 @end
