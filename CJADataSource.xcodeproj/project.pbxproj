@@ -105,7 +105,8 @@
 		6531F77F198C25D70082B798 /* CJAFetchedResultsSectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAFetchedResultsSectionHeaderTableView.m; path = FetchedResultsController/Views/SectionHeaderView/CJAFetchedResultsSectionHeaderTableView.m; sourceTree = "<group>"; };
 		657BE9EB1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJAMutableArraySectionHeaderTableView.h; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.h; sourceTree = "<group>"; };
 		657BE9EC1964458B00A826EA /* CJAMutableArraySectionHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAMutableArraySectionHeaderTableView.m; path = MutableArray/Views/SectionHeaderView/CJAMutableArraySectionHeaderTableView.m; sourceTree = "<group>"; };
-		8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C377C3300C3C817BDF2C8391 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CF0587E43AC3D74CA9A93423 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FA3FC09E1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJATestCaseThatNeedsATableView.h; path = Tests/Base/CJATestCaseThatNeedsATableView.h; sourceTree = SOURCE_ROOT; };
 		FA3FC09F1965B6C700A9DF00 /* CJATestCaseThatNeedsATableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJATestCaseThatNeedsATableView.m; path = Tests/Base/CJATestCaseThatNeedsATableView.m; sourceTree = SOURCE_ROOT; };
 		FA3FC0A219667A5500A9DF00 /* CJATableViewTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJATableViewTestCase.m; path = Tests/CJATableViewTestCase.m; sourceTree = SOURCE_ROOT; };
@@ -336,6 +337,15 @@
 			name = SectionHeaderView;
 			sourceTree = "<group>";
 		};
+		6C38D83E5C4AEB3892FD7AAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF0587E43AC3D74CA9A93423 /* Pods.debug.xcconfig */,
+				C377C3300C3C817BDF2C8391 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA3FC09D1965B69D00A9DF00 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,7 +415,7 @@
 				FAF7A85D19603F290037E2CD /* CJADataSourceTests */,
 				FAF7A83419603F280037E2CD /* Frameworks */,
 				FAF7A83319603F280037E2CD /* Products */,
-				8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */,
+				6C38D83E5C4AEB3892FD7AAD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -591,7 +601,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -734,7 +744,7 @@
 		};
 		FAF7A86819603F290037E2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
+			baseConfigurationReference = CF0587E43AC3D74CA9A93423 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -749,7 +759,7 @@
 		};
 		FAF7A86919603F290037E2CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
+			baseConfigurationReference = C377C3300C3C817BDF2C8391 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -764,7 +774,6 @@
 		};
 		FAF7A86B19603F290037E2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -787,7 +796,6 @@
 		};
 		FAF7A86C19603F290037E2CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A228E7745C14DD4A04BD0E0 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJADataSource.app/CJADataSource";
 				FRAMEWORK_SEARCH_PATHS = (

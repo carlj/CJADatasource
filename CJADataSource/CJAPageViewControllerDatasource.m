@@ -61,7 +61,8 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
       viewControllerBeforeViewController:(UIViewController *)viewController {
     
-    NSUInteger newIndex = self.currentIndex;
+    NSString *hashKey = [[self class] hashKeyForObject:viewController];
+    NSUInteger newIndex = [self.cachedIndexes[hashKey] integerValue];
     if (!newIndex) {
         return nil;
     }
@@ -69,7 +70,7 @@
     newIndex -= 1;
     
     UIViewController *newViewController = [self viewControllerForIndex:newIndex];
-    NSString *hashKey = [[self class] hashKeyForObject:newViewController];
+    hashKey = [[self class] hashKeyForObject:newViewController];
     
     self.cachedIndexes[hashKey] = @(newIndex);
     
@@ -79,12 +80,13 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
        viewControllerAfterViewController:(UIViewController *)viewController {
     
-    NSUInteger newIndex = self.currentIndex;
+    NSString *hashKey = [[self class] hashKeyForObject:viewController];
+    NSUInteger newIndex = [self.cachedIndexes[hashKey] integerValue];
     
     newIndex += 1;
     
     UIViewController *newViewController = [self viewControllerForIndex:newIndex];
-    NSString *hashKey = [[self class] hashKeyForObject:newViewController];
+    hashKey = [[self class] hashKeyForObject:newViewController];
     
     self.cachedIndexes[hashKey] = @(newIndex);
     
