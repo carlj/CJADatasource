@@ -27,8 +27,8 @@
 - (void)addObject:(id)object inSection:(NSUInteger)section {
     NSParameterAssert(object);
     
-    NSUInteger countSections = [self.mutableItems count];
-    NSAssert(section < countSections, @"Invalid section number");
+
+    NSAssert(section < [self.mutableItems count], @"Invalid section number");
     id sectionObj = self.mutableItems[section];
     NSAssert([[sectionObj class] isSubclassOfClass:[NSMutableArray class]], @"Should be an NSMutableArray type object");
     NSMutableArray *sectionObjects = (NSMutableArray *)sectionObj;

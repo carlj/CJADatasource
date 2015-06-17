@@ -14,15 +14,13 @@
     NSParameterAssert(object);
     NSParameterAssert(indexPath);
     
-    NSUInteger countSections = [self count];
-    NSAssert(indexPath.section < countSections, @"Invalid section number");
+    NSAssert(indexPath.section < self.count, @"Invalid section number");
 
     id sectionObj = self[indexPath.section];
     NSAssert([[sectionObj class] isSubclassOfClass:[NSMutableArray class]], @"Should be an NSMutableArray type object");
 
     NSMutableArray *sectionItems = (NSMutableArray *)sectionObj;
-    NSUInteger countItems = [sectionItems count];
-    NSAssert(indexPath.row <= countItems, @"Invalid row number");
+    NSAssert(indexPath.row <= sectionItems.count, @"Invalid row number");
     [sectionItems insertObject:object atIndex:indexPath.row];
 }
 
@@ -30,13 +28,13 @@
     NSParameterAssert(object);
     
     NSMutableArray *indexPaths = [NSMutableArray array];
-    NSUInteger countSections = [self count];
+    NSUInteger countSections = self.count;
     for (NSUInteger sectionIndex = 0; sectionIndex < countSections; sectionIndex++) {
         id sectionObj = self[sectionIndex];
         NSAssert([[sectionObj class] isSubclassOfClass:[NSMutableArray class]], @"Should be an NSMutableArray type object");
         NSMutableArray *sectionItems = (NSMutableArray *)sectionObj;
 
-        NSUInteger countItems = [sectionItems count];
+        NSUInteger countItems = sectionItems.count;
         for (NSUInteger itemIndex = 0; itemIndex < countItems; itemIndex++) {
             id itemObj = sectionItems[itemIndex];
             if (itemObj == object) {
@@ -57,8 +55,7 @@
         NSAssert([[sectionObj class] isSubclassOfClass:[NSMutableArray class]], @"Should be an NSMutableArray type object");
         NSMutableArray *sectionItems = (NSMutableArray *)sectionObj;
 
-        NSUInteger countItems = [sectionItems count];
-        NSAssert(indexPath.row < countItems, @"Invalid row number");
+        NSAssert(indexPath.row < sectionItems.count, @"Invalid row number");
         sectionItems[indexPath.row] = [NSNull null];
     }
 
@@ -66,7 +63,7 @@
 }
 
 - (void)removeNullObjects {
-    NSUInteger countSections = [self count];
+    NSUInteger countSections = self.count;
     for (NSUInteger sectionIndex = 0; sectionIndex < countSections; sectionIndex++) {
         id sectionObj = self[sectionIndex];
         NSAssert([[sectionObj class] isSubclassOfClass:[NSMutableArray class]], @"Should be an NSMutableArray type object");
@@ -77,14 +74,13 @@
 
 - (void)removeEmptySections {
     NSMutableArray *toBeRemoved = [NSMutableArray array];
-    NSUInteger countSections = [self count];
+    NSUInteger countSections = self.count;
     for (NSUInteger sectionIndex = 0; sectionIndex < countSections; sectionIndex++) {
         id sectionObj = self[sectionIndex];
         NSAssert([[sectionObj class] isSubclassOfClass:[NSMutableArray class]], @"Should be an NSMutableArray type object");
         NSMutableArray *sectionItems = (NSMutableArray *)sectionObj;
         
-        NSUInteger countItems = [sectionItems count];
-        if (!countItems) {
+        if (!sectionItems.count) {
             [toBeRemoved addObject:sectionItems];
         }
     }
