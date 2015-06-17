@@ -116,7 +116,7 @@
         return 44.0f;
     }
     
-    return self.cellHightBlock(tableView, object);
+    return self.cellHightBlock(tableView, indexPath, object);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
