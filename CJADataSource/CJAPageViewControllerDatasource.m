@@ -46,9 +46,6 @@
 }
 
 - (void)setCurrentIndex:(NSUInteger)currentIndex {
-    if (_currentIndex == currentIndex) {
-        return;
-    }
     _currentIndex = currentIndex;
     
     if (self.currentIndexChangedBlock) {
@@ -110,6 +107,18 @@
         self.currentIndex = newIndex.integerValue;
     }
 }
+
+- (void)pageViewController:(UIPageViewController *)pageViewController
+        didFinishAnimating:(BOOL)finished
+   previousViewControllers:(NSArray *)previousViewControllers
+       transitionCompleted:(BOOL)completed
+{
+    
+    if (!completed) {
+        [self pageViewController:pageViewController willTransitionToViewControllers:previousViewControllers];
+    }
+}
+
 
 - (BOOL)showNextViewControllerAnimated:(BOOL)animated completed:(CJAPageViewControllerDatasourceAnimationCompletionBlock)completed {
     
