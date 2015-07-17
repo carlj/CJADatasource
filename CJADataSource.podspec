@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
  s.name         = "CJADataSource"
- s.version      = "0.0.8"
- s.platform     = :ios, "6.0"
+ s.version      = "0.0.9"
+ s.platform     = :ios, "7.0"
  s.summary      = "TableView block based Datasource"
  s.homepage     = "https://github.com/carlj/CJADataSource"
  s.authors      = { "Carl Jahn" => "jahncarl@gmail.com" }
